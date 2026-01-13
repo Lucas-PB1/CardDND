@@ -1,0 +1,36 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper function to check if user is admin
+    // Note: This relies on a custom claim or a field lookup. 
+    // For simplicity here, we assume a custom claim 'admin' is set on Auth token.
+    // In many simple apps, checking a field in 'users/{uid}' is also done but costlier (1 read).
+    function isAdmin() {
+      return request.auth != null && request.auth.token.admin == true;
+    }
+
+    function isOwner(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+
+    // Users Collection
+    match /users/{userId} {
+      // Admin can read/write everything
+      // Owner can read their own profile
+      // Owners can update specific fields (e.g. displayName, photoURL) but not role
+      allow read: if isOwner(userId) || isAdmin();
+      allow create: if isOwner(userId); // Or typically done via Backend (Admin SDK)
+      allow update: if isOwner(userId) && 
+                    (!request.resource.data.diff(resource.data).affectedKeys().hasAny(['role', 'isActive']));
+    }
+
+    // Access Logs
+    // Only Admin can read logs
+    // Only Backend (Admin SDK) should write logs (Bypass rules), but if client writes:
+    match /access_logs/{logId} {
+      allow read: if isAdmin();
+      allow write: if false; // Only backend admin sdk can write
+    }
+  }
+}

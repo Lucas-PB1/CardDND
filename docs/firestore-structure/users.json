@@ -1,0 +1,14 @@
+{
+  "uid": "7892be20-506d-...",
+  "email": "user@example.com",
+  "displayName": "John Doe",
+  "photoURL": "https://...",
+  "role": "user",
+  "isActive": true,
+  "createdAt": "Timestamp(1715616000, 0)",
+  "updatedAt": "Timestamp(1715616000, 0)",
+  "preferences": {
+    "theme": "dark",
+    "notifications": true
+  }
+}
