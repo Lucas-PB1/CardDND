@@ -2,7 +2,6 @@ import { NextResponse } from "next/server";
 import { auth } from "firebase-admin";
 import { deleteFriendship, respondToFriendRequest } from "@/services/socialService";
 
-// PATCH: Respond (Accept/Reject)
 export async function PATCH(
     request: Request,
     { params }: { params: Promise<{ id: string }> }
@@ -31,7 +30,6 @@ export async function PATCH(
     }
 }
 
-// DELETE: Cancel Request / Unfriend
 export async function DELETE(
     request: Request,
     { params }: { params: Promise<{ id: string }> }

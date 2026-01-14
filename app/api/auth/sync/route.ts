@@ -13,7 +13,6 @@ export async function POST(request: Request) {
         const decodedToken = await adminAuth.verifyIdToken(token);
         const { uid, email } = decodedToken;
 
-        // Parse additional data from body
         const body = await request.json();
         const { displayName, photoURL, birthDate, hasPlayedBefore } = body;
 

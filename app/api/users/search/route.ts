@@ -19,7 +19,6 @@ export async function GET(request: Request) {
 
         const results = await searchUsers(query, decodedToken.uid);
 
-        // Sanitize sensitive data if needed (UserProfile already kinda safe)
         const safeResults = results.map(u => ({
             uid: u.uid,
             displayName: u.displayName,

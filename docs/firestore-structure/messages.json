@@ -1,0 +1,7 @@
+{
+  "id": "message-uuid",
+  "senderId": "uid1",
+  "text": "Hello there!",
+  "createdAt": "Timestamp",
+  "readBy": ["uid1", "uid2"]
+}

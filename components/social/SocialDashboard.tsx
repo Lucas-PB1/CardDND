@@ -1,31 +1,70 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
+
+const MySwal = withReactContent(Swal);
+
 import { UserCard } from "./UserCard";
 import { useSocial } from "@/hooks/useSocial";
 import { Input } from "@/components/ui/Input";
-import { Button } from "@/components/ui/Button"; // Check if Button is exported correctly, if not use default or updated
+import { Button } from "@/components/ui/Button"; 
+import { ChatWindow } from "@/components/chat/ChatWindow";
+import { useChat } from "@/hooks/useChat";
+import { useAuth } from "@/context/AuthContext";
+import { UserProfile } from "@/services/userService";
+import { useSmartDeeplink } from "@/hooks/useSmartDeeplink";
 
 export default function SocialDashboard() {
     const { 
         friends, 
         incomingRequests, 
-        sentRequests, // New prop
+        sentRequests,
         searchResults, 
         searchQuery, 
         setSearchQuery, 
-        isLoading, // Global loading
-        actionLoading, // Loading for specific action
+        isLoading,
+        actionLoading,
         searchUsers, 
         sendRequest, 
         respondToRequest,
-        cancelRequest, // New action
+        cancelRequest,
+        removeFriend,
         error,
         successMessage,
         clearMessages
     } = useSocial();
 
     const [activeTab, setActiveTab] = useState<"friends" | "requests" | "sent" | "find">("friends");
+
+    useSmartDeeplink({
+        param: "tab",
+        validValues: ["friends", "requests", "sent", "find"],
+        onMatch: (val) => setActiveTab(val)
+    });
+    
+    const { user: currentUser } = useAuth();
+    const { 
+        isOpen: isChatOpen, 
+        messages: chatMessages, 
+        sendMessage, 
+        openChat, 
+        closeChat, 
+        isLoading: isChatLoading 
+    } = useChat();
+    const [chatRecipient, setChatRecipient] = useState<UserProfile | null>(null);
+
+    const handleMessage = (recipient: UserProfile) => {
+        setChatRecipient(recipient);
+        openChat(recipient.uid);
+    }
+
+    const handleCloseChat = () => {
+        closeChat();
+        setChatRecipient(null);
+    }
 
     const handleSearch = (e: React.FormEvent) => {
         e.preventDefault();
@@ -93,13 +132,29 @@ export default function SocialDashboard() {
                                 </div>
                             ) : (
                                 friends.map(friend => (
-                                    <UserCard 
+                                    <UserCard
                                         key={friend.id}
                                         user={friend.profile}
                                         actionLabel="Message"
-                                        onAction={() => alert("Messaging coming soon!")}
+                                        onAction={() => handleMessage(friend.profile)}
                                         secondaryActionLabel="Remove"
-                                        onSecondaryAction={() => alert("Remove friend logic here")}
+                                    onSecondaryAction={() => {
+                                        MySwal.fire({
+                                            title: "Remove Friend?",
+                                            text: "Are you sure you want to remove this friend? This action cannot be undone.",
+                                            icon: "warning",
+                                            showCancelButton: true,
+                                            confirmButtonColor: "#EF4444", // red-500
+                                            cancelButtonColor: "#3B82F6", // blue-500
+                                            confirmButtonText: "Yes, remove",
+                                            background: '#111827', // gray-900
+                                            color: '#fff'
+                                        }).then((result) => {
+                                            if (result.isConfirmed) {
+                                                removeFriend(friend.id);
+                                            }
+                                        });
+                                    }}
                                     />
                                 ))
                             )}
@@ -185,6 +240,16 @@ export default function SocialDashboard() {
                     )}
                 </div>
             </div>
+
+            <ChatWindow 
+                isOpen={isChatOpen}
+                onClose={handleCloseChat}
+                recipient={chatRecipient}
+                messages={chatMessages}
+                onSendMessage={sendMessage}
+                currentUserId={currentUser?.uid}
+                loading={isChatLoading}
+            />
         </div>
     );
 }

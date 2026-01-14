@@ -6,7 +6,7 @@ export interface UserProfile {
     email: string;
     displayName: string;
     photoURL?: string;
-    birthDate?: FirebaseFirestore.Timestamp | Date; // Added
+    birthDate?: FirebaseFirestore.Timestamp | Date;
     hasPlayedBefore: boolean;
     role: "user" | "admin";
     createdAt: FirebaseFirestore.Timestamp | Date;
@@ -113,4 +113,38 @@ export async function getAllUsers(): Promise<UserProfile[]> {
             updatedAt: data.updatedAt?.toDate ? data.updatedAt.toDate() : data.updatedAt,
         } as UserProfile;
     });
+}
+
+/**
+ * Retrieves user profiles by a list of UIDs.
+ * Handles the Firestore constraint of max 10 items per 'in' query.
+ */
+export async function getUsersByIds(uids: string[]): Promise<UserProfile[]> {
+    if (uids.length === 0) return [];
+
+    const uniqueUids = Array.from(new Set(uids));
+
+    const chunks = [];
+    for (let i = 0; i < uniqueUids.length; i += 10) {
+        chunks.push(uniqueUids.slice(i, i + 10));
+    }
+
+    const promises = chunks.map(chunk =>
+        adminDb.collection(COLLECTION_USERS)
+            .where("uid", "in", chunk)
+            .get()
+    );
+
+    const snapshots = await Promise.all(promises);
+    const users = snapshots.flatMap(snap => snap.docs.map(doc => {
+        const data = doc.data();
+        return {
+            ...data,
+            birthDate: data.birthDate?.toDate ? data.birthDate.toDate() : data.birthDate,
+            createdAt: data.createdAt?.toDate ? data.createdAt.toDate() : data.createdAt,
+            updatedAt: data.updatedAt?.toDate ? data.updatedAt.toDate() : data.updatedAt,
+        } as UserProfile;
+    }));
+
+    return users;
 }

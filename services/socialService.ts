@@ -25,14 +25,12 @@ export interface FriendRequestWithProfile extends Friendship {
 export async function sendFriendRequest(requesterId: string, recipientId: string) {
     if (requesterId === recipientId) throw new Error("Cannot add self");
 
-    // Check if friendship already exists
     const query = await adminDb.collection(COLLECTION_FRIENDSHIPS)
         .where("requesterId", "in", [requesterId, recipientId])
         .where("recipientId", "in", [requesterId, recipientId])
         .get();
 
     if (!query.empty) {
-        // If rejected, maybe allow re-sending? For now, just error.
         throw new Error("Friendship request already exists");
     }
 
@@ -59,7 +57,6 @@ export async function respondToFriendRequest(requestId: string, userId: string, 
     if (!doc.exists) throw new Error("Request not found");
     const data = doc.data() as Friendship;
 
-    // Only the recipient can respond
     if (data.recipientId !== userId) {
         throw new Error("Unauthorized");
     }
@@ -82,7 +79,6 @@ export async function deleteFriendship(requestId: string, userId: string) {
     if (!doc.exists) throw new Error("Request not found");
     const data = doc.data() as Friendship;
 
-    // Allow deletion if user is requester OR recipient (reject/cancel/unfriend)
     if (data.requesterId !== userId && data.recipientId !== userId) {
         throw new Error("Unauthorized");
     }
@@ -117,22 +113,7 @@ export async function searchUsers(query: string, currentUserId: string): Promise
 
     const strSearch = query.toLowerCase();
 
-    // Firestore doesn't support generic case-insensitive search easily without external tools like Algolia.
-    // For this MVP, we will fetch users (limit 20) and filter in memory or rely on exact matches if needed.
-    // Ideally, we'd store a `searchKey` lowercase field on the User document.
-
-    // Attempting a hacky prefix search on displayName (assuming case sensitive matches for now, or fetch all users? No, too expensive).
-    // Let's rely on exact email match OR partial displayName match if we had a searchKey.
-    // Fallback: Fetch a limit of 50 recent users and filter? No.
-
-    // Better approach for MVP: Simple scan. Or just exact email.
-    // Let's implement exact email search first as it's reliable.
-
-    // If we want partial name search, we really need a lowercase field.
-    // I will assume for now we search by Exact Email or "Greater Than" displayName prefix if possible.
-
     const usersRef = adminDb.collection(COLLECTION_USERS);
-    // Prefix search on displayName
     const nameSnapshot = await usersRef
         .where("displayName", ">=", query)
         .where("displayName", "<=", query + '\uf8ff')

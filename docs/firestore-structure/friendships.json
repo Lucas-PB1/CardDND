@@ -1,0 +1,8 @@
+{
+  "id": "friendship-unique-id",
+  "requesterId": "user-uid-1",
+  "recipientId": "user-uid-2",
+  "status": "pending|accepted|rejected",
+  "createdAt": "Timestamp(seconds, nanoseconds)",
+  "updatedAt": "Timestamp(seconds, nanoseconds)"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "notification-uuid",
+  "userId": "recipient-uid",
+  "type": "friend_request|friend_accepted|system",
+  "title": "New Friend Request",
+  "body": "User X sent you a friend request",
+  "data": {
+    "requesterId": "uid",
+    "requestId": "id"
+  },
+  "isRead": false,
+  "createdAt": "Timestamp"
+}

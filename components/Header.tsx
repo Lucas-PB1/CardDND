@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useAuth } from "@/context/AuthContext";
 import { Button } from "@/components/ui/Button"; // Assuming you have a reusable Button
 import { useState } from "react";
+import { NotificationBell } from "./notifications/NotificationBell";
 
 export function Header() {
   const { user, logout, loading } = useAuth();
@@ -26,7 +27,9 @@ export function Header() {
 
       <div className="flex items-center gap-4">
         {user ? (
-          <div className="relative">
+          <div className="flex items-center gap-4">
+            <NotificationBell />
+            <div className="relative">
             <button 
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 className="flex items-center gap-2 rounded-full ring-2 ring-transparent transition-all hover:ring-blue-500/50 focus:outline-none focus:ring-blue-500"
@@ -81,6 +84,7 @@ export function Header() {
                     </div>
                 </>
             )}
+            </div>
           </div>
         ) : (
           <div className="flex items-center gap-4">
