@@ -1,14 +1,13 @@
 import { adminDb } from "@/lib/firebase-admin";
 import { FieldValue } from "firebase-admin/firestore";
 
-// Define Types
 export interface UserProfile {
     uid: string;
     email: string;
     displayName: string;
     photoURL?: string;
     birthDate?: FirebaseFirestore.Timestamp | Date; // Added
-    hasPlayedBefore: boolean; // Added
+    hasPlayedBefore: boolean;
     role: "user" | "admin";
     createdAt: FirebaseFirestore.Timestamp | Date;
     updatedAt: FirebaseFirestore.Timestamp | Date;
@@ -35,14 +34,38 @@ export async function createUserProfile(uid: string, data: Partial<UserProfile>)
     const userRef = adminDb.collection(COLLECTION_USERS).doc(uid);
     const now = new Date();
 
-    await userRef.set({
-        uid,
-        role: "user", // Default role
-        isActive: true,
-        createdAt: now,
+    const snapshot = await userRef.get();
+
+    if (snapshot.exists) {
+        await userRef.update({
+            updatedAt: now,
+            ...data,
+        });
+    } else {
+        await userRef.set({
+            uid,
+            role: "user",
+            isActive: true,
+            createdAt: now,
+            updatedAt: now,
+            ...data,
+        });
+    }
+
+    return { uid, ...data };
+}
+
+/**
+ * Updates an existing user profile.
+ */
+export async function updateUserProfile(uid: string, data: Partial<UserProfile>) {
+    const userRef = adminDb.collection(COLLECTION_USERS).doc(uid);
+    const now = new Date();
+
+    await userRef.update({
         updatedAt: now,
         ...data,
-    }, { merge: true });
+    });
 
     return { uid, ...data };
 }

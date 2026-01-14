@@ -15,11 +15,9 @@ export function useRegister() {
         setGlobalError(null);
 
         try {
-            // 1. Create Auth User
             const userCredential = await createUserWithEmailAndPassword(auth, data.email, data.password);
             const user = userCredential.user;
 
-            // 2. Upload Avatar (if exists)
             let photoURL = "";
             if (data.avatar) {
                 try {
@@ -29,16 +27,13 @@ export function useRegister() {
                 }
             }
 
-            // 3. Update Auth Profile
             await updateProfile(user, {
                 displayName: data.displayName,
                 photoURL: photoURL || null,
             });
 
-            // 4. Send Verification Email
             await sendEmailVerification(user);
 
-            // 5. Sync with Backend (Firestore)
             const token = await getIdToken(user);
 
             const syncPayload = {

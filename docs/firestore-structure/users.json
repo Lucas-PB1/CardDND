@@ -5,10 +5,8 @@
   "photoURL": "https://...",
   "role": "user",
   "isActive": true,
+  "birthDate": "Timestamp(1715616000, 0)",
+  "hasPlayedBefore": false,
   "createdAt": "Timestamp(1715616000, 0)",
-  "updatedAt": "Timestamp(1715616000, 0)",
-  "preferences": {
-    "theme": "dark",
-    "notifications": true
-  }
+  "updatedAt": "Timestamp(1715616000, 0)"
 }
