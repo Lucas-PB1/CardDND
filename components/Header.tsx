@@ -62,6 +62,13 @@ export function Header() {
                         >
                             Profile
                         </Link>
+                        <Link 
+                            href="/social"
+                            className="block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-300 hover:bg-white/5 hover:text-white transition-colors"
+                            onClick={() => setIsDropdownOpen(false)}
+                        >
+                            Social
+                        </Link>
                         <button
                             onClick={() => {
                                 logout();
