@@ -1,4 +1,5 @@
 import { UserProfile } from "@/services/userService";
+
 import { BaseApiService } from "./baseApiService";
 
 export class AdminClientService extends BaseApiService {
@@ -12,4 +13,3 @@ export class AdminClientService extends BaseApiService {
 }
 
 export const adminClient = new AdminClientService();
-

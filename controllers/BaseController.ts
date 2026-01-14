@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+
 import { auth } from "firebase-admin";
 
 export abstract class BaseController {
@@ -16,7 +17,7 @@ export abstract class BaseController {
         try {
             const decodedToken = await auth().verifyIdToken(token);
             return decodedToken;
-        } catch (error) {
+        } catch {
             throw new Error("Unauthorized: Invalid token");
         }
     }

@@ -1,5 +1,6 @@
-import { BaseController } from "./BaseController";
 import { userService } from "@/services/userService";
+
+import { BaseController } from "./BaseController";
 
 export class AuthController extends BaseController {
     async logAccess(request: Request) {

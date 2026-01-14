@@ -1,11 +1,12 @@
 "use client";
 
-import { useAuth } from "@/context/AuthContext";
-import { profileSchema, ProfileFormData } from "@/schemas/profileSchema";
-import { GenericForm, FieldConfig, CustomComponentProps } from "@/components/ui/GenericForm";
-import { useProfile } from "@/hooks/useProfile";
-import { AvatarField, AvatarFieldProps } from "@/components/profile/AvatarField";
 import { DefaultValues } from "react-hook-form";
+
+import { AvatarField } from "@/components/profile/AvatarField";
+import { CustomComponentProps, FieldConfig, GenericForm } from "@/components/ui/GenericForm";
+import { useAuth } from "@/context/AuthContext";
+import { useProfile } from "@/hooks/useProfile";
+import { ProfileFormData, profileSchema } from "@/schemas/profileSchema";
 
 export function ProfileForm() {
     const { user } = useAuth();
@@ -13,8 +14,8 @@ export function ProfileForm() {
 
     if (loading) {
         return (
-            <div className="min-h-screen flex items-center justify-center bg-gray-950 text-white">
-                <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+            <div className="flex min-h-screen items-center justify-center bg-gray-950 text-white">
+                <div className="h-12 w-12 animate-spin rounded-full border-t-2 border-b-2 border-blue-500"></div>
             </div>
         );
     }
@@ -24,12 +25,12 @@ export function ProfileForm() {
             name: "avatar",
             type: "file",
             component: (props: CustomComponentProps<ProfileFormData>) => (
-                <AvatarField 
+                <AvatarField
                     onChange={props.onChange as (file: File | null) => void}
                     value={props.value as File | undefined}
                     error={props.error}
-                    currentPhotoURL={user?.photoURL} 
-                    displayName={user?.displayName || undefined} 
+                    currentPhotoURL={user?.photoURL}
+                    displayName={user?.displayName || undefined}
                 />
             ),
             colSpan: 2,
@@ -49,23 +50,25 @@ export function ProfileForm() {
             name: "hasPlayedBefore",
             type: "checkbox",
             label: "I have played Dungeons & Dragons before",
-            colSpan: 2
-        }
+            colSpan: 2,
+        },
     ];
 
     return (
-        <div className="min-h-screen pt-24 pb-12 px-4 bg-gray-950 text-white">
-            <div className="max-w-2xl mx-auto bg-gray-900 border border-white/10 rounded-2xl p-8 shadow-2xl">
-                <h1 className="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+        <div className="min-h-screen bg-gray-950 px-4 pt-24 pb-12 text-white">
+            <div className="mx-auto max-w-2xl rounded-2xl border border-white/10 bg-gray-900 p-8 shadow-2xl">
+                <h1 className="mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-center text-3xl font-bold text-transparent">
                     Your Profile
                 </h1>
 
                 {message && (
-                    <div className={`p-4 rounded-lg mb-6 ${message.type === 'success' ? 'bg-green-500/20 text-green-400 border border-green-500/30' : 'bg-red-500/20 text-red-400 border border-red-500/30'}`}>
+                    <div
+                        className={`mb-6 rounded-lg p-4 ${message.type === "success" ? "border border-green-500/30 bg-green-500/20 text-green-400" : "border border-red-500/30 bg-red-500/20 text-red-400"}`}
+                    >
                         {message.text}
                     </div>
                 )}
-                
+
                 {defaultValues && (
                     <GenericForm<ProfileFormData>
                         schema={profileSchema}

@@ -1,15 +1,16 @@
 import {
-    collection,
-    query,
-    where,
-    orderBy,
-    onSnapshot,
     Timestamp,
-    updateDoc,
+    collection,
     doc,
+    getDocs,
+    onSnapshot,
+    orderBy,
+    query,
+    updateDoc,
+    where,
     writeBatch,
-    getDocs
 } from "firebase/firestore";
+
 import { db } from "@/lib/firebase";
 
 export interface NotificationData {
@@ -38,14 +39,17 @@ export class NotificationService {
         const q = query(
             collection(db, COLLECTION_NOTIFICATIONS),
             where("userId", "==", userId),
-            orderBy("createdAt", "desc")
+            orderBy("createdAt", "desc"),
         );
 
         return onSnapshot(q, (snapshot) => {
-            const notifications = snapshot.docs.map(doc => ({
-                id: doc.id,
-                ...doc.data()
-            } as Notification));
+            const notifications = snapshot.docs.map(
+                (doc) =>
+                    ({
+                        id: doc.id,
+                        ...doc.data(),
+                    }) as Notification,
+            );
             callback(notifications);
         });
     }
@@ -56,7 +60,7 @@ export class NotificationService {
     async markAsRead(notificationId: string) {
         const ref = doc(db, COLLECTION_NOTIFICATIONS, notificationId);
         await updateDoc(ref, {
-            isRead: true
+            isRead: true,
         });
     }
 
@@ -67,7 +71,7 @@ export class NotificationService {
         const q = query(
             collection(db, COLLECTION_NOTIFICATIONS),
             where("userId", "==", userId),
-            where("isRead", "==", false)
+            where("isRead", "==", false),
         );
 
         const snapshot = await getDocs(q);
@@ -75,7 +79,7 @@ export class NotificationService {
         if (snapshot.empty) return;
 
         const batch = writeBatch(db);
-        snapshot.docs.forEach(doc => {
+        snapshot.docs.forEach((doc) => {
             batch.update(doc.ref, { isRead: true });
         });
 
@@ -84,4 +88,3 @@ export class NotificationService {
 }
 
 export const notificationService = new NotificationService();
-

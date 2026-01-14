@@ -1,5 +1,7 @@
-import { ProfileFormData } from "@/schemas/profileSchema";
 import { User, updateProfile } from "firebase/auth";
+
+import { ProfileFormData } from "@/schemas/profileSchema";
+
 import { BaseApiService } from "./baseApiService";
 import { UserProfile } from "./userService";
 
@@ -24,9 +26,8 @@ export class ProfileClientService extends BaseApiService {
     formatDateForInput(date: Date | string | undefined): string | undefined {
         if (!date) return undefined;
         const d = new Date(date);
-        return d.toISOString().split('T')[0];
+        return d.toISOString().split("T")[0];
     }
 }
 
 export const profileClient = new ProfileClientService();
-

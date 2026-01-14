@@ -1,8 +1,10 @@
-import { BaseController } from "./BaseController";
+import { FieldValue } from "firebase-admin/firestore";
+
+import { adminDb } from "@/lib/firebase-admin";
 import { socialService } from "@/services/socialService";
 import { userService } from "@/services/userService";
-import { adminDb } from "@/lib/firebase-admin";
-import { FieldValue } from "firebase-admin/firestore";
+
+import { BaseController } from "./BaseController";
 
 export class SocialController extends BaseController {
     async getFriends(request: Request) {
@@ -10,24 +12,27 @@ export class SocialController extends BaseController {
             const decodedToken = await this.getAuthenticatedUser(request);
             const connections = await socialService.getSocialConnections(decodedToken.uid);
 
-            const otherUserIds = connections.map(c =>
-                c.requesterId === decodedToken.uid ? c.recipientId : c.requesterId
+            const otherUserIds = connections.map((c) =>
+                c.requesterId === decodedToken.uid ? c.recipientId : c.requesterId,
             );
 
             const profiles = await userService.getUsersByIds(otherUserIds);
-            const profileMap = new Map(profiles.map(p => [p.uid, p]));
+            const profileMap = new Map(profiles.map((p) => [p.uid, p]));
 
-            const connectionsWithProfiles = connections.map(c => {
-                const otherUserId = c.requesterId === decodedToken.uid ? c.recipientId : c.requesterId;
-                const profile = profileMap.get(otherUserId);
+            const connectionsWithProfiles = connections
+                .map((c) => {
+                    const otherUserId =
+                        c.requesterId === decodedToken.uid ? c.recipientId : c.requesterId;
+                    const profile = profileMap.get(otherUserId);
 
-                if (!profile) return null;
-                return {
-                    ...c,
-                    profile,
-                    isRequester: c.requesterId === decodedToken.uid
-                };
-            }).filter(c => c !== null);
+                    if (!profile) return null;
+                    return {
+                        ...c,
+                        profile,
+                        isRequester: c.requesterId === decodedToken.uid,
+                    };
+                })
+                .filter((c) => c !== null);
 
             return this.jsonResponse(connectionsWithProfiles);
         } catch (error) {
@@ -53,10 +58,10 @@ export class SocialController extends BaseController {
                 body: `${decodedToken.name || decodedToken.email || "Someone"} sent you a friend request.`,
                 data: {
                     requesterId: decodedToken.uid,
-                    requestId: result.id
+                    requestId: result.id,
                 },
                 isRead: false,
-                createdAt: FieldValue.serverTimestamp()
+                createdAt: FieldValue.serverTimestamp(),
             });
 
             return this.jsonResponse(result);
@@ -104,12 +109,12 @@ export class SocialController extends BaseController {
 
             const results = await socialService.searchUsers(query, decodedToken.uid);
 
-            const safeResults = results.map(u => ({
+            const safeResults = results.map((u) => ({
                 uid: u.uid,
                 displayName: u.displayName,
                 email: u.email,
                 photoURL: u.photoURL,
-                role: u.role
+                role: u.role,
             }));
 
             return this.jsonResponse(safeResults);

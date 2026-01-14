@@ -1,5 +1,6 @@
+import { UserProfile, userService } from "@/services/userService";
+
 import { BaseController } from "./BaseController";
-import { userService, UserProfile } from "@/services/userService";
 
 export class AdminController extends BaseController {
     async getUsers(request: Request) {

@@ -1,8 +1,9 @@
-import { useState, useEffect, useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
+
 import { useAuth } from "@/context/AuthContext";
 import { socialClient } from "@/services/socialClientService";
-import { UserProfile } from "@/services/userService";
 import { FriendRequestWithProfile } from "@/services/socialService";
+import { UserProfile } from "@/services/userService";
 
 export function useSocial() {
     const { user } = useAuth();
@@ -25,9 +26,9 @@ export function useSocial() {
             setIsLoading(true);
             const data = await socialClient.getSocialConnections();
 
-            const myFriends = data.filter(c => c.status === "accepted");
-            const incoming = data.filter(c => c.status === "pending" && !c.isRequester);
-            const sent = data.filter(c => c.status === "pending" && c.isRequester);
+            const myFriends = data.filter((c) => c.status === "accepted");
+            const incoming = data.filter((c) => c.status === "pending" && !c.isRequester);
+            const sent = data.filter((c) => c.status === "pending" && c.isRequester);
 
             setFriends(myFriends);
             setIncomingRequests(incoming);
@@ -53,7 +54,7 @@ export function useSocial() {
             setIsLoading(true);
             const results = await socialClient.searchUsers(query);
             setSearchResults(results);
-        } catch (err) {
+        } catch {
             setError("Search failed");
         } finally {
             setIsLoading(false);
@@ -65,7 +66,7 @@ export function useSocial() {
             setActionLoading(recipientId);
             await socialClient.sendFriendRequest(recipientId);
             setSuccessMessage("Friend request sent!");
-            setSearchResults(prev => prev.filter(u => u.uid !== recipientId));
+            setSearchResults((prev) => prev.filter((u) => u.uid !== recipientId));
             loadConnections();
         } catch (err) {
             const error = err as Error;
@@ -84,9 +85,9 @@ export function useSocial() {
                 await loadConnections();
             } else {
                 setSuccessMessage("Request rejected.");
-                setIncomingRequests(prev => prev.filter(r => r.id !== requestId));
+                setIncomingRequests((prev) => prev.filter((r) => r.id !== requestId));
             }
-        } catch (err) {
+        } catch {
             setError("Failed to respond");
         } finally {
             setActionLoading(null);
@@ -98,31 +99,31 @@ export function useSocial() {
             setActionLoading(requestId);
             await socialClient.cancelRequest(requestId);
             setSuccessMessage("Request cancelled.");
-            setSentRequests(prev => prev.filter(r => r.id !== requestId));
-        } catch (err) {
+            setSentRequests((prev) => prev.filter((r) => r.id !== requestId));
+        } catch {
             setError("Failed to cancel request");
         } finally {
             setActionLoading(null);
         }
-    }
+    };
 
     const removeFriend = async (friendshipId: string) => {
         try {
             setActionLoading(friendshipId);
             await socialClient.cancelRequest(friendshipId);
             setSuccessMessage("Friend removed.");
-            setFriends(prev => prev.filter(f => f.id !== friendshipId));
-        } catch (err) {
+            setFriends((prev) => prev.filter((f) => f.id !== friendshipId));
+        } catch {
             setError("Failed to remove friend");
         } finally {
             setActionLoading(null);
         }
-    }
+    };
 
     const clearMessages = () => {
         setError(null);
         setSuccessMessage(null);
-    }
+    };
 
     return {
         friends,
@@ -140,6 +141,6 @@ export function useSocial() {
         respondToRequest,
         cancelRequest,
         removeFriend,
-        clearMessages
+        clearMessages,
     };
 }

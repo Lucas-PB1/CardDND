@@ -1,17 +1,23 @@
-import { useState, useEffect } from "react";
-import { useAuth } from "@/context/AuthContext";
+import { useEffect, useState } from "react";
+
 import { useRouter } from "next/navigation";
+
+import { useAuth } from "@/context/AuthContext";
 import { ProfileFormData } from "@/schemas/profileSchema";
-import { storageService } from "@/services/storageService";
 import { profileClient } from "@/services/profileClientService";
+import { storageService } from "@/services/storageService";
 
 export function useProfile() {
     const { user, loading: authLoading } = useAuth();
     const router = useRouter();
     const [loading, setLoading] = useState(true);
     const [saving, setSaving] = useState(false);
-    const [message, setMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
-    const [defaultValues, setDefaultValues] = useState<Partial<ProfileFormData> | undefined>(undefined);
+    const [message, setMessage] = useState<{ type: "success" | "error"; text: string } | null>(
+        null,
+    );
+    const [defaultValues, setDefaultValues] = useState<Partial<ProfileFormData> | undefined>(
+        undefined,
+    );
 
     useEffect(() => {
         if (!authLoading && !user) {
@@ -29,7 +35,7 @@ export function useProfile() {
                 displayName: data.displayName,
                 hasPlayedBefore: data.hasPlayedBefore,
                 birthDate: profileClient.formatDateForInput(data.birthDate),
-                avatar: undefined
+                avatar: undefined,
             });
         } catch (error) {
             console.error(error);
@@ -54,7 +60,10 @@ export function useProfile() {
             await profileClient.updateUserProfileApi({
                 displayName: data.displayName,
                 photoURL: photoURL,
-                birthDate: data.birthDate instanceof Date ? data.birthDate.toISOString() : new Date(data.birthDate).toISOString(),
+                birthDate:
+                    data.birthDate instanceof Date
+                        ? data.birthDate.toISOString()
+                        : new Date(data.birthDate).toISOString(),
                 hasPlayedBefore: data.hasPlayedBefore,
             });
 
@@ -72,6 +81,6 @@ export function useProfile() {
         saving,
         message,
         defaultValues,
-        onSubmit
+        onSubmit,
     };
 }

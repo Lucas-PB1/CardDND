@@ -1,8 +1,8 @@
 {
-  "uid": "7892be20-506d-...",
-  "email": "user@example.com",
-  "action": "LOGIN",
-  "timestamp": "Timestamp(1715616000, 0)",
-  "ipAddress": "192.168.1.1",
-  "userAgent": "Mozilla/5.0 ..."
+    "uid": "7892be20-506d-...",
+    "email": "user@example.com",
+    "action": "LOGIN",
+    "timestamp": "Timestamp(1715616000, 0)",
+    "ipAddress": "192.168.1.1",
+    "userAgent": "Mozilla/5.0 ..."
 }

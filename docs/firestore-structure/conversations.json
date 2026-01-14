@@ -1,10 +1,10 @@
 {
-  "id": "conversation-uuid",
-  "participants": ["uid1", "uid2"],
-  "lastMessage": {
-    "text": "Hello there!",
-    "senderId": "uid1",
-    "createdAt": "Timestamp"
-  },
-  "updatedAt": "Timestamp"
+    "id": "conversation-uuid",
+    "participants": ["uid1", "uid2"],
+    "lastMessage": {
+        "text": "Hello there!",
+        "senderId": "uid1",
+        "createdAt": "Timestamp"
+    },
+    "updatedAt": "Timestamp"
 }

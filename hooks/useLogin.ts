@@ -1,7 +1,10 @@
 import { useState } from "react";
-import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "@/lib/firebase";
+
 import { useRouter } from "next/navigation";
+
+import { signInWithEmailAndPassword } from "firebase/auth";
+
+import { auth } from "@/lib/firebase";
 import { LoginFormData } from "@/schemas/loginSchema";
 
 export function useLogin() {

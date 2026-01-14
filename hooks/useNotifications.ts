@@ -1,22 +1,25 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+
 import { useAuth } from "@/context/AuthContext";
-import { notificationService, Notification } from "@/services/notificationService";
+import { Notification, notificationService } from "@/services/notificationService";
 
 export function useNotifications() {
     const { user } = useAuth();
     const [notifications, setNotifications] = useState<Notification[]>([]);
     const [unreadCount, setUnreadCount] = useState(0);
 
+    // Reset state during render when user logs out to avoid cascading renders in useEffect
+    if (!user && (notifications.length > 0 || unreadCount > 0)) {
+        setNotifications([]);
+        setUnreadCount(0);
+    }
+
     useEffect(() => {
-        if (!user) {
-            setNotifications([]);
-            setUnreadCount(0);
-            return;
-        }
+        if (!user) return;
 
         const unsubscribe = notificationService.subscribeToNotifications(user.uid, (data) => {
             setNotifications(data);
-            setUnreadCount(data.filter(n => !n.isRead).length);
+            setUnreadCount(data.filter((n) => !n.isRead).length);
         });
 
         return () => unsubscribe();
@@ -35,6 +38,6 @@ export function useNotifications() {
         notifications,
         unreadCount,
         markAsRead,
-        markAllAsRead
+        markAllAsRead,
     };
 }

@@ -1,5 +1,7 @@
-import { UserProfile } from "@/services/userService";
+import Image from "next/image";
+
 import { Button } from "@/components/ui/Button";
+import { UserProfile } from "@/services/userService";
 
 interface UserCardProps {
     user: UserProfile;
@@ -11,21 +13,27 @@ interface UserCardProps {
     loading?: boolean;
 }
 
-export function UserCard({ 
-    user, 
-    actionLabel, 
-    onAction, 
+export function UserCard({
+    user,
+    actionLabel,
+    onAction,
     secondaryActionLabel,
     onSecondaryAction,
     variant = "default",
-    loading = false 
+    loading = false,
 }: UserCardProps) {
     return (
-        <div className="flex items-center justify-between p-4 bg-white/5 border border-white/10 rounded-xl hover:border-white/20 transition-all">
+        <div className="flex items-center justify-between rounded-xl border border-white/10 bg-white/5 p-4 transition-all hover:border-white/20">
             <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-purple-500 text-lg font-bold text-white">
                     {user.photoURL ? (
-                        <img src={user.photoURL} alt={user.displayName} className="w-full h-full rounded-full object-cover" />
+                        <Image
+                            src={user.photoURL}
+                            alt={user.displayName || "User Avatar"}
+                            width={48}
+                            height={48}
+                            className="h-full w-full rounded-full object-cover"
+                        />
                     ) : (
                         user.displayName?.charAt(0).toUpperCase() || "?"
                     )}
@@ -35,22 +43,22 @@ export function UserCard({
                     <p className="text-sm text-gray-400">{user.email}</p>
                 </div>
             </div>
-            
+
             <div className="flex items-center gap-2">
                 {secondaryActionLabel && onSecondaryAction && (
-                    <Button 
-                        onClick={onSecondaryAction} 
+                    <Button
+                        onClick={onSecondaryAction}
                         variant="secondary"
-                        className="text-xs px-3 h-8"
+                        className="h-8 px-3 text-xs"
                         disabled={loading}
                     >
                         {secondaryActionLabel}
                     </Button>
                 )}
-                <Button 
-                    onClick={onAction} 
+                <Button
+                    onClick={onAction}
                     variant={variant === "request" ? "primary" : "secondary"}
-                    className="text-xs px-3 h-8"
+                    className="h-8 px-3 text-xs"
                     disabled={loading}
                 >
                     {loading ? "..." : actionLabel}

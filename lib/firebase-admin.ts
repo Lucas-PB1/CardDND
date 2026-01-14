@@ -1,8 +1,7 @@
-import "server-only";
-
-import { initializeApp, getApps, getApp, App, cert } from "firebase-admin/app";
+import { App, cert, getApp, getApps, initializeApp } from "firebase-admin/app";
 import { getAuth } from "firebase-admin/auth";
 import { getFirestore } from "firebase-admin/firestore";
+import "server-only";
 
 let app: App;
 
@@ -12,14 +11,16 @@ if (!getApps().length) {
     const privateKey = process.env.FIREBASE_PRIVATE_KEY;
 
     if (!projectId || !clientEmail || !privateKey) {
-        throw new Error("Missing Firebase Admin credentials. Please set FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL, and FIREBASE_PRIVATE_KEY.");
+        throw new Error(
+            "Missing Firebase Admin credentials. Please set FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL, and FIREBASE_PRIVATE_KEY.",
+        );
     }
 
     app = initializeApp({
         credential: cert({
             projectId,
             clientEmail,
-            privateKey: privateKey.replace(/\\n/g, '\n'),
+            privateKey: privateKey.replace(/\\n/g, "\n"),
         }),
     });
 } else {

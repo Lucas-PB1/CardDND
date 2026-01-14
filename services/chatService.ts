@@ -1,18 +1,19 @@
 import {
-    collection,
-    addDoc,
-    query,
-    where,
-    orderBy,
-    onSnapshot,
-    serverTimestamp,
     Timestamp,
-    getDocs,
-    updateDoc,
+    addDoc,
+    arrayUnion,
+    collection,
     doc,
+    getDocs,
+    onSnapshot,
+    orderBy,
+    query,
+    serverTimestamp,
     setDoc,
-    arrayUnion
+    updateDoc,
+    where,
 } from "firebase/firestore";
+
 import { db } from "@/lib/firebase";
 
 export interface Message {
@@ -45,11 +46,11 @@ export class ChatService {
     async createConversation(currentUserId: string, otherUserId: string): Promise<string> {
         const q = query(
             collection(db, COLLECTION_CONVERSATIONS),
-            where("participants", "array-contains", currentUserId)
+            where("participants", "array-contains", currentUserId),
         );
 
         const snapshot = await getDocs(q);
-        const existing = snapshot.docs.find(doc => {
+        const existing = snapshot.docs.find((doc) => {
             const data = doc.data() as Conversation;
             return data.participants.includes(otherUserId) && data.participants.length === 2;
         });
@@ -74,21 +75,26 @@ export class ChatService {
     async sendMessage(conversationId: string, text: string, senderId: string) {
         if (!text.trim()) return;
 
-        const messagesRef = collection(db, COLLECTION_CONVERSATIONS, conversationId, COLLECTION_MESSAGES);
+        const messagesRef = collection(
+            db,
+            COLLECTION_CONVERSATIONS,
+            conversationId,
+            COLLECTION_MESSAGES,
+        );
         const conversationRef = doc(db, COLLECTION_CONVERSATIONS, conversationId);
 
         const messageData = {
             text: text.trim(),
             senderId,
             createdAt: serverTimestamp(),
-            readBy: [senderId]
+            readBy: [senderId],
         };
 
         await addDoc(messagesRef, messageData);
 
         await updateDoc(conversationRef, {
             lastMessage: messageData,
-            updatedAt: serverTimestamp()
+            updatedAt: serverTimestamp(),
         });
     }
 
@@ -99,7 +105,7 @@ export class ChatService {
         const conversationRef = doc(db, COLLECTION_CONVERSATIONS, conversationId);
 
         await updateDoc(conversationRef, {
-            "lastMessage.readBy": arrayUnion(userId)
+            "lastMessage.readBy": arrayUnion(userId),
         });
     }
 
@@ -110,14 +116,17 @@ export class ChatService {
         const q = query(
             collection(db, COLLECTION_CONVERSATIONS),
             where("participants", "array-contains", userId),
-            orderBy("updatedAt", "desc")
+            orderBy("updatedAt", "desc"),
         );
 
         return onSnapshot(q, (snapshot) => {
-            const conversations = snapshot.docs.map(doc => ({
-                id: doc.id,
-                ...doc.data()
-            } as Conversation));
+            const conversations = snapshot.docs.map(
+                (doc) =>
+                    ({
+                        id: doc.id,
+                        ...doc.data(),
+                    }) as Conversation,
+            );
             callback(conversations);
         });
     }
@@ -128,18 +137,20 @@ export class ChatService {
     subscribeToMessages(conversationId: string, callback: (messages: Message[]) => void) {
         const q = query(
             collection(db, COLLECTION_CONVERSATIONS, conversationId, COLLECTION_MESSAGES),
-            orderBy("createdAt", "asc")
+            orderBy("createdAt", "asc"),
         );
 
         return onSnapshot(q, (snapshot) => {
-            const messages = snapshot.docs.map(doc => ({
-                id: doc.id,
-                ...doc.data()
-            } as Message));
+            const messages = snapshot.docs.map(
+                (doc) =>
+                    ({
+                        id: doc.id,
+                        ...doc.data(),
+                    }) as Message,
+            );
             callback(messages);
         });
     }
 }
 
 export const chatService = new ChatService();
-

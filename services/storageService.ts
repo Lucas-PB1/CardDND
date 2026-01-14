@@ -1,4 +1,5 @@
-import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
+
 import { storage } from "@/lib/firebase";
 import { compressImage } from "@/utils/imageUtils";
 
@@ -22,4 +23,3 @@ export class StorageService {
 }
 
 export const storageService = new StorageService();
-

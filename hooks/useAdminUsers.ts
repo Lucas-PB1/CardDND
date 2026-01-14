@@ -1,15 +1,19 @@
-import { useState, useEffect } from "react";
-import { UserProfile } from "@/services/userService";
-import { adminClient } from "@/services/adminClientService";
-import { useAuth } from "@/context/AuthContext";
+import { useEffect, useState } from "react";
+
 import { useRouter } from "next/navigation";
+
+import { useAuth } from "@/context/AuthContext";
+import { adminClient } from "@/services/adminClientService";
+import { UserProfile } from "@/services/userService";
 
 export function useAdminUsers() {
     const { user, loading: authLoading } = useAuth();
     const router = useRouter();
     const [users, setUsers] = useState<UserProfile[]>([]);
     const [loading, setLoading] = useState(true);
-    const [message, setMessage] = useState<{ type: "success" | "error", text: string } | null>(null);
+    const [message, setMessage] = useState<{ type: "success" | "error"; text: string } | null>(
+        null,
+    );
 
     useEffect(() => {
         if (!authLoading) {
@@ -40,9 +44,9 @@ export function useAdminUsers() {
 
         try {
             await adminClient.updateUserRole(uid, newRole);
-            setUsers(users.map(u => u.uid === uid ? { ...u, role: newRole } : u));
+            setUsers(users.map((u) => (u.uid === uid ? { ...u, role: newRole } : u)));
             setMessage({ type: "success", text: "Role updated successfully" });
-        } catch (error) {
+        } catch {
             setMessage({ type: "error", text: "Failed to update role" });
         }
     };
@@ -53,6 +57,6 @@ export function useAdminUsers() {
         message,
         loadUsers,
         handleRoleChange,
-        authLoading
+        authLoading,
     };
 }

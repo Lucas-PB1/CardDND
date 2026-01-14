@@ -1,10 +1,7 @@
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+
 import { useAuth } from "@/context/AuthContext";
-import {
-    chatService,
-    Message,
-    Conversation
-} from "@/services/chatService";
+import { Message, chatService } from "@/services/chatService";
 
 export function useChat() {
     const { user } = useAuth();
@@ -15,19 +12,22 @@ export function useChat() {
 
     const unsubscribeRef = useRef<(() => void) | null>(null);
 
-    const openChat = useCallback(async (otherUserId: string) => {
-        if (!user) return;
-        try {
-            setIsLoading(true);
-            const conversationId = await chatService.createConversation(user.uid, otherUserId);
-            setActiveConversationId(conversationId);
-            setIsOpen(true);
-        } catch (error) {
-            console.error("Failed to open chat", error);
-        } finally {
-            setIsLoading(false);
-        }
-    }, [user]);
+    const openChat = useCallback(
+        async (otherUserId: string) => {
+            if (!user) return;
+            try {
+                setIsLoading(true);
+                const conversationId = await chatService.createConversation(user.uid, otherUserId);
+                setActiveConversationId(conversationId);
+                setIsOpen(true);
+            } catch (error) {
+                console.error("Failed to open chat", error);
+            } finally {
+                setIsLoading(false);
+            }
+        },
+        [user],
+    );
 
     const closeChat = useCallback(() => {
         setIsOpen(false);
@@ -39,14 +39,17 @@ export function useChat() {
         }
     }, []);
 
-    const sendMessage = useCallback(async (text: string) => {
-        if (!user || !activeConversationId) return;
-        try {
-            await chatService.sendMessage(activeConversationId, text, user.uid);
-        } catch (error) {
-            console.error("Failed to send message", error);
-        }
-    }, [user, activeConversationId]);
+    const sendMessage = useCallback(
+        async (text: string) => {
+            if (!user || !activeConversationId) return;
+            try {
+                await chatService.sendMessage(activeConversationId, text, user.uid);
+            } catch (error) {
+                console.error("Failed to send message", error);
+            }
+        },
+        [user, activeConversationId],
+    );
 
     useEffect(() => {
         if (!activeConversationId) {

@@ -7,7 +7,7 @@ export abstract class BaseApiService {
         const token = await user.getIdToken();
         return {
             Authorization: `Bearer ${token}`,
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
         };
     }
 
@@ -26,7 +26,7 @@ export abstract class BaseApiService {
         const res = await fetch(url, {
             method: "POST",
             headers,
-            body: JSON.stringify(body)
+            body: JSON.stringify(body),
         });
         if (!res.ok) {
             const error = await res.json().catch(() => ({}));
@@ -40,7 +40,7 @@ export abstract class BaseApiService {
         const res = await fetch(url, {
             method: "PATCH",
             headers,
-            body: JSON.stringify(body)
+            body: JSON.stringify(body),
         });
         if (!res.ok) {
             const error = await res.json().catch(() => ({}));
@@ -53,7 +53,7 @@ export abstract class BaseApiService {
         const headers = await this.getAuthHeaders();
         const res = await fetch(url, {
             method: "DELETE",
-            headers
+            headers,
         });
         if (!res.ok) {
             const error = await res.json().catch(() => ({}));

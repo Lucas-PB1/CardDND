@@ -1,5 +1,6 @@
-import { adminDb } from "@/lib/firebase-admin";
 import { FieldValue } from "firebase-admin/firestore";
+
+import { adminDb } from "@/lib/firebase-admin";
 
 export interface UserProfile {
     uid: string;
@@ -74,7 +75,12 @@ export class UserService {
     /**
      * Logs a user action (e.g. login) to Firestore.
      */
-    async logUserAccess(uid: string, email: string, action: AccessLog["action"], meta?: { ip?: string, ua?: string }) {
+    async logUserAccess(
+        uid: string,
+        email: string,
+        action: AccessLog["action"],
+        meta?: { ip?: string; ua?: string },
+    ) {
         await adminDb.collection(COLLECTION_LOGS).add({
             uid,
             email,
@@ -104,8 +110,11 @@ export class UserService {
      * Retrieves all user profiles (Admin only).
      */
     async getAllUsers(): Promise<UserProfile[]> {
-        const snapshot = await adminDb.collection(COLLECTION_USERS).orderBy("createdAt", "desc").get();
-        return snapshot.docs.map(doc => {
+        const snapshot = await adminDb
+            .collection(COLLECTION_USERS)
+            .orderBy("createdAt", "desc")
+            .get();
+        return snapshot.docs.map((doc) => {
             const data = doc.data();
             return {
                 ...data,
@@ -130,26 +139,25 @@ export class UserService {
             chunks.push(uniqueUids.slice(i, i + 10));
         }
 
-        const promises = chunks.map(chunk =>
-            adminDb.collection(COLLECTION_USERS)
-                .where("uid", "in", chunk)
-                .get()
+        const promises = chunks.map((chunk) =>
+            adminDb.collection(COLLECTION_USERS).where("uid", "in", chunk).get(),
         );
 
         const snapshots = await Promise.all(promises);
-        const users = snapshots.flatMap(snap => snap.docs.map(doc => {
-            const data = doc.data();
-            return {
-                ...data,
-                birthDate: data.birthDate?.toDate ? data.birthDate.toDate() : data.birthDate,
-                createdAt: data.createdAt?.toDate ? data.createdAt.toDate() : data.createdAt,
-                updatedAt: data.updatedAt?.toDate ? data.updatedAt.toDate() : data.updatedAt,
-            } as UserProfile;
-        }));
+        const users = snapshots.flatMap((snap) =>
+            snap.docs.map((doc) => {
+                const data = doc.data();
+                return {
+                    ...data,
+                    birthDate: data.birthDate?.toDate ? data.birthDate.toDate() : data.birthDate,
+                    createdAt: data.createdAt?.toDate ? data.createdAt.toDate() : data.createdAt,
+                    updatedAt: data.updatedAt?.toDate ? data.updatedAt.toDate() : data.updatedAt,
+                } as UserProfile;
+            }),
+        );
 
         return users;
     }
 }
 
 export const userService = new UserService();
-

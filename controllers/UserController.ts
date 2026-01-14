@@ -1,5 +1,6 @@
+import { UserProfile, userService } from "@/services/userService";
+
 import { BaseController } from "./BaseController";
-import { userService, UserProfile } from "@/services/userService";
 
 export class UserController extends BaseController {
     async getProfile(request: Request) {
@@ -13,10 +14,10 @@ export class UserController extends BaseController {
                 throw new Error("Profile not found");
             }
 
-            const serializeDate = (date: UserProfile['birthDate']) => {
+            const serializeDate = (date: UserProfile["birthDate"]) => {
                 if (!date) return undefined;
                 if (date instanceof Date) return date.toISOString();
-                if (typeof date === 'object' && 'toDate' in date) {
+                if (typeof date === "object" && "toDate" in date) {
                     return (date as { toDate: () => Date }).toDate().toISOString();
                 }
                 return date as string;

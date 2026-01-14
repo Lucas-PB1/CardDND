@@ -1,5 +1,7 @@
-import { useState, useRef, useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
+
 import { useRouter } from "next/navigation";
+
 import { useNotifications } from "@/hooks/useNotifications";
 import { Notification } from "@/services/notificationService";
 
@@ -45,6 +47,6 @@ export function useNotificationBell() {
         dropdownRef,
         handleNotificationClick,
         handleMarkAllRead,
-        toggleDropdown
+        toggleDropdown,
     };
 }

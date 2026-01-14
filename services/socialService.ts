@@ -1,5 +1,7 @@
-import { adminDb } from "@/lib/firebase-admin";
 import { FieldValue } from "firebase-admin/firestore";
+
+import { adminDb } from "@/lib/firebase-admin";
+
 import { UserProfile } from "./userService";
 
 const COLLECTION_FRIENDSHIPS = "friendships";
@@ -26,7 +28,8 @@ export class SocialService {
     async sendFriendRequest(requesterId: string, recipientId: string) {
         if (requesterId === recipientId) throw new Error("Cannot add self");
 
-        const query = await adminDb.collection(COLLECTION_FRIENDSHIPS)
+        const query = await adminDb
+            .collection(COLLECTION_FRIENDSHIPS)
             .where("requesterId", "in", [requesterId, recipientId])
             .where("recipientId", "in", [requesterId, recipientId])
             .get();
@@ -51,7 +54,11 @@ export class SocialService {
     /**
      * Responds to a friend request (Accept/Reject).
      */
-    async respondToFriendRequest(requestId: string, userId: string, status: "accepted" | "rejected") {
+    async respondToFriendRequest(
+        requestId: string,
+        userId: string,
+        status: "accepted" | "rejected",
+    ) {
         const ref = adminDb.collection(COLLECTION_FRIENDSHIPS).doc(requestId);
         const doc = await ref.get();
 
@@ -92,12 +99,12 @@ export class SocialService {
     async getSocialConnections(userId: string) {
         const [asRequester, asRecipient] = await Promise.all([
             adminDb.collection(COLLECTION_FRIENDSHIPS).where("requesterId", "==", userId).get(),
-            adminDb.collection(COLLECTION_FRIENDSHIPS).where("recipientId", "==", userId).get()
+            adminDb.collection(COLLECTION_FRIENDSHIPS).where("recipientId", "==", userId).get(),
         ]);
 
         const connections: Friendship[] = [
-            ...asRequester.docs.map(d => d.data() as Friendship),
-            ...asRecipient.docs.map(d => d.data() as Friendship)
+            ...asRequester.docs.map((d) => d.data() as Friendship),
+            ...asRecipient.docs.map((d) => d.data() as Friendship),
         ];
 
         return connections;
@@ -110,26 +117,23 @@ export class SocialService {
     async searchUsers(query: string, currentUserId: string): Promise<UserProfile[]> {
         if (!query || query.length < 3) return [];
 
-        const strSearch = query.toLowerCase();
-
         const usersRef = adminDb.collection(COLLECTION_USERS);
         const nameSnapshot = await usersRef
             .where("displayName", ">=", query)
-            .where("displayName", "<=", query + '\uf8ff')
+            .where("displayName", "<=", query + "\uf8ff")
             .limit(10)
             .get();
 
-        let results = nameSnapshot.docs.map(d => d.data() as UserProfile);
+        const results = nameSnapshot.docs.map((d) => d.data() as UserProfile);
 
         const emailSnapshot = await usersRef.where("email", "==", query).get();
-        const emailResults = emailSnapshot.docs.map(d => d.data() as UserProfile);
+        const emailResults = emailSnapshot.docs.map((d) => d.data() as UserProfile);
 
         const all = [...results, ...emailResults];
-        const unique = Array.from(new Map(all.map(item => [item.uid, item])).values());
+        const unique = Array.from(new Map(all.map((item) => [item.uid, item])).values());
 
-        return unique.filter(u => u.uid !== currentUserId);
+        return unique.filter((u) => u.uid !== currentUserId);
     }
 }
 
 export const socialService = new SocialService();
-

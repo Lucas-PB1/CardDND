@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-import { useSearchParams, useRouter, usePathname } from "next/navigation";
+
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 interface UseSmartDeeplinkOptions<T extends string> {
     param: string;
@@ -15,7 +16,7 @@ export function useSmartDeeplink<T extends string>({
     param,
     validValues,
     onMatch,
-    clearOnMatch = false
+    clearOnMatch = false,
 }: UseSmartDeeplinkOptions<T>) {
     const searchParams = useSearchParams();
     const router = useRouter();
@@ -37,6 +38,5 @@ export function useSmartDeeplink<T extends string>({
             newParams.delete(param);
             router.replace(`${pathname}?${newParams.toString()}`, { scroll: false });
         }
-
     }, [searchParams, param, validValues, onMatch, clearOnMatch, router, pathname]);
 }

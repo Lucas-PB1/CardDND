@@ -1,7 +1,15 @@
 import { useState } from "react";
-import { createUserWithEmailAndPassword, sendEmailVerification, getIdToken, updateProfile } from "firebase/auth";
-import { auth } from "@/lib/firebase";
+
 import { useRouter } from "next/navigation";
+
+import {
+    createUserWithEmailAndPassword,
+    getIdToken,
+    sendEmailVerification,
+    updateProfile,
+} from "firebase/auth";
+
+import { auth } from "@/lib/firebase";
 import { RegisterFormData } from "@/schemas/registerSchema";
 import { storageService } from "@/services/storageService";
 
@@ -15,7 +23,11 @@ export function useRegister() {
         setGlobalError(null);
 
         try {
-            const userCredential = await createUserWithEmailAndPassword(auth, data.email, data.password);
+            const userCredential = await createUserWithEmailAndPassword(
+                auth,
+                data.email,
+                data.password,
+            );
             const user = userCredential.user;
 
             let photoURL = "";
