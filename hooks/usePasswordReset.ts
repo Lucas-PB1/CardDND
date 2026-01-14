@@ -16,9 +16,10 @@ export function usePasswordReset() {
         try {
             await sendPasswordResetEmail(auth, data.email);
             setMessage("Password reset email sent! Check your inbox.");
-        } catch (err: any) {
-            console.error(err);
-            if (err.code === "auth/user-not-found") {
+        } catch (err) {
+            const error = err as Error & { code?: string };
+            console.error(error);
+            if (error.code === "auth/user-not-found") {
                 setError("No user found with this email.");
             } else {
                 setError("Failed to send reset email. Please try again.");

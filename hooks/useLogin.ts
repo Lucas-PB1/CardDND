@@ -16,8 +16,9 @@ export function useLogin() {
         try {
             await signInWithEmailAndPassword(auth, data.email, data.password);
             router.push("/");
-        } catch (err: any) {
-            console.error(err);
+        } catch (err) {
+            const error = err as Error;
+            console.error(error);
             setError("Invalid email or password. Please try again.");
         } finally {
             setLoading(false);

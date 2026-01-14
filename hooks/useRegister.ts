@@ -3,7 +3,7 @@ import { createUserWithEmailAndPassword, sendEmailVerification, getIdToken, upda
 import { auth } from "@/lib/firebase";
 import { useRouter } from "next/navigation";
 import { RegisterFormData } from "@/schemas/registerSchema";
-import { uploadAvatar } from "@/services/storageService";
+import { storageService } from "@/services/storageService";
 
 export function useRegister() {
     const [loading, setLoading] = useState(false);
@@ -21,7 +21,7 @@ export function useRegister() {
             let photoURL = "";
             if (data.avatar) {
                 try {
-                    photoURL = await uploadAvatar(user.uid, data.avatar);
+                    photoURL = await storageService.uploadAvatar(user.uid, data.avatar);
                 } catch (imgError) {
                     console.error("Avatar upload failed, continuing without it.", imgError);
                 }
@@ -57,9 +57,10 @@ export function useRegister() {
             }
 
             router.push("/");
-        } catch (err: any) {
-            console.error(err);
-            if (err.code === "auth/email-already-in-use") {
+        } catch (err) {
+            const error = err as Error & { code?: string };
+            console.error(error);
+            if (error.code === "auth/email-already-in-use") {
                 setGlobalError("This email is already registered.");
             } else {
                 setGlobalError("Failed to register. Please try again.");

@@ -42,7 +42,8 @@ export default function SocialDashboard() {
     useSmartDeeplink({
         param: "tab",
         validValues: ["friends", "requests", "sent", "find"],
-        onMatch: (val) => setActiveTab(val)
+        onMatch: (val) => setActiveTab(val),
+        clearOnMatch: true
     });
     
     const { user: currentUser } = useAuth();

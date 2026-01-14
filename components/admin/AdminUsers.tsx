@@ -22,7 +22,7 @@ export default function AdminUsers() {
         },
         { 
             header: "Created At", 
-            render: (u) => new Date(u.createdAt as any).toLocaleDateString() 
+            render: (u) => new Date(u.createdAt as string | Date).toLocaleDateString() 
         },
         {
             header: "Actions",

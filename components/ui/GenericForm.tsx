@@ -1,6 +1,6 @@
 "use client";
 
-import { useForm, DefaultValues, SubmitHandler, Path } from "react-hook-form";
+import { useForm, DefaultValues, SubmitHandler, Path, FieldValues, Resolver, PathValue, UseFormRegisterReturn } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
@@ -9,16 +9,25 @@ import { FileInput } from "@/components/ui/FileInput";
 import * as yup from "yup";
 import { ReactNode } from "react";
 
-export interface FieldConfig<T extends Record<string, any>> {
+export interface CustomComponentProps<T extends FieldValues> {
+    onChange: (value: PathValue<T, Path<T>>) => void;
+    onBlur: UseFormRegisterReturn["onBlur"];
+    value: PathValue<T, Path<T>>;
+    name: Path<T>;
+    ref: UseFormRegisterReturn["ref"];
+    error?: string;
+}
+
+export interface FieldConfig<T extends FieldValues> {
     name: Path<T>;
     type: "text" | "email" | "password" | "date" | "checkbox" | "file";
     label?: string;
     placeholder?: string;
-    component?: (props: any) => ReactNode; 
+    component?: (props: CustomComponentProps<T>) => ReactNode; 
     colSpan?: 1 | 2;
 }
 
-interface GenericFormProps<T extends Record<string, any>> {
+interface GenericFormProps<T extends FieldValues> {
     schema: yup.ObjectSchema<T>;
     defaultValues?: DefaultValues<T>;
     onSubmit: SubmitHandler<T>;
@@ -29,7 +38,7 @@ interface GenericFormProps<T extends Record<string, any>> {
     globalError?: string | null;
 }
 
-export function GenericForm<T extends Record<string, any>>({
+export function GenericForm<T extends FieldValues>({
     schema,
     defaultValues,
     onSubmit,
@@ -46,7 +55,7 @@ export function GenericForm<T extends Record<string, any>>({
         setValue,
         watch,
     } = useForm<T>({
-        resolver: yupResolver(schema) as any,
+        resolver: yupResolver(schema) as Resolver<T>,
         defaultValues,
     });
 
@@ -71,7 +80,7 @@ export function GenericForm<T extends Record<string, any>>({
                                     field.component({ 
                                         ...register(field.name), 
                                         error, 
-                                        onChange: (val: any) => setValue(field.name, val), 
+                                        onChange: (val: PathValue<T, Path<T>>) => setValue(field.name, val), 
                                         value: watch(field.name) 
                                     })
                                 ) : field.type === "checkbox" ? (
@@ -88,7 +97,7 @@ export function GenericForm<T extends Record<string, any>>({
                                             <FileInput
                                                 label={field.label || ""}
                                                 error={error}
-                                                onChange={(file) => setValue(field.name, file as any)}
+                                                onChange={(file) => setValue(field.name, file as PathValue<T, Path<T>>)}
                                             />
                                         </div>
                                     </div>

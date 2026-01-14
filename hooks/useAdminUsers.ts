@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { UserProfile } from "@/services/userService";
-import { fetchAllUsers, updateUserRole } from "@/services/adminClientService";
+import { adminClient } from "@/services/adminClientService";
 import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
 
@@ -24,7 +24,7 @@ export function useAdminUsers() {
     const loadUsers = async () => {
         try {
             setLoading(true);
-            const data = await fetchAllUsers();
+            const data = await adminClient.fetchAllUsers();
             setUsers(data);
         } catch (error) {
             console.error("Failed to load users", error);
@@ -39,7 +39,7 @@ export function useAdminUsers() {
         if (!confirm(`Change role to ${newRole}?`)) return;
 
         try {
-            await updateUserRole(uid, newRole);
+            await adminClient.updateUserRole(uid, newRole);
             setUsers(users.map(u => u.uid === uid ? { ...u, role: newRole } : u));
             setMessage({ type: "success", text: "Role updated successfully" });
         } catch (error) {

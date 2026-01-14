@@ -1,9 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { useAuth } from "@/context/AuthContext";
 import {
-    createConversation,
-    sendMessage as sendMessageApi,
-    subscribeToMessages,
+    chatService,
     Message,
     Conversation
 } from "@/services/chatService";
@@ -21,7 +19,7 @@ export function useChat() {
         if (!user) return;
         try {
             setIsLoading(true);
-            const conversationId = await createConversation(user.uid, otherUserId);
+            const conversationId = await chatService.createConversation(user.uid, otherUserId);
             setActiveConversationId(conversationId);
             setIsOpen(true);
         } catch (error) {
@@ -44,7 +42,7 @@ export function useChat() {
     const sendMessage = useCallback(async (text: string) => {
         if (!user || !activeConversationId) return;
         try {
-            await sendMessageApi(activeConversationId, text, user.uid);
+            await chatService.sendMessage(activeConversationId, text, user.uid);
         } catch (error) {
             console.error("Failed to send message", error);
         }
@@ -60,7 +58,7 @@ export function useChat() {
             unsubscribeRef.current();
         }
 
-        const unsubscribe = subscribeToMessages(activeConversationId, (newMessages) => {
+        const unsubscribe = chatService.subscribeToMessages(activeConversationId, (newMessages) => {
             setMessages(newMessages);
         });
 

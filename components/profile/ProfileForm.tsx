@@ -2,9 +2,10 @@
 
 import { useAuth } from "@/context/AuthContext";
 import { profileSchema, ProfileFormData } from "@/schemas/profileSchema";
-import { GenericForm, FieldConfig } from "@/components/ui/GenericForm";
+import { GenericForm, FieldConfig, CustomComponentProps } from "@/components/ui/GenericForm";
 import { useProfile } from "@/hooks/useProfile";
-import { AvatarField } from "@/components/profile/AvatarField";
+import { AvatarField, AvatarFieldProps } from "@/components/profile/AvatarField";
+import { DefaultValues } from "react-hook-form";
 
 export function ProfileForm() {
     const { user } = useAuth();
@@ -22,9 +23,11 @@ export function ProfileForm() {
         {
             name: "avatar",
             type: "file",
-            component: (props: any) => (
+            component: (props: CustomComponentProps<ProfileFormData>) => (
                 <AvatarField 
-                    {...props} 
+                    onChange={props.onChange as (file: File | null) => void}
+                    value={props.value as File | undefined}
+                    error={props.error}
                     currentPhotoURL={user?.photoURL} 
                     displayName={user?.displayName || undefined} 
                 />
@@ -69,7 +72,7 @@ export function ProfileForm() {
                         onSubmit={onSubmit}
                         fields={fields}
                         submitText="Save Changes"
-                        defaultValues={defaultValues as any}
+                        defaultValues={defaultValues as DefaultValues<ProfileFormData>}
                         loading={saving}
                     />
                 )}

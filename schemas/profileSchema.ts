@@ -14,7 +14,7 @@ export const profileSchema = yup.object({
 
 export interface ProfileFormData {
     displayName: string;
-    birthDate: Date;
+    birthDate: Date | string;
     hasPlayedBefore: boolean;
     avatar?: File | null;
 }

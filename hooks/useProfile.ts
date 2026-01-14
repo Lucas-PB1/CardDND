@@ -2,13 +2,8 @@ import { useState, useEffect } from "react";
 import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
 import { ProfileFormData } from "@/schemas/profileSchema";
-import { uploadAvatar } from "@/services/storageService";
-import {
-    getProfile,
-    updateUserProfileApi,
-    updateAuthProfile,
-    formatDateForInput
-} from "@/services/profileClientService";
+import { storageService } from "@/services/storageService";
+import { profileClient } from "@/services/profileClientService";
 
 export function useProfile() {
     const { user, loading: authLoading } = useAuth();
@@ -28,15 +23,12 @@ export function useProfile() {
 
     const fetchProfile = async () => {
         try {
-            const token = await user?.getIdToken();
-            if (!token) return;
-
-            const data = await getProfile(token);
+            const data = await profileClient.getProfile();
 
             setDefaultValues({
                 displayName: data.displayName,
                 hasPlayedBefore: data.hasPlayedBefore,
-                birthDate: formatDateForInput(data.birthDate) as any,
+                birthDate: profileClient.formatDateForInput(data.birthDate),
                 avatar: undefined
             });
         } catch (error) {
@@ -54,16 +46,15 @@ export function useProfile() {
         try {
             let photoURL = user.photoURL;
             if (data.avatar) {
-                photoURL = await uploadAvatar(user.uid, data.avatar);
+                photoURL = await storageService.uploadAvatar(user.uid, data.avatar);
             }
 
-            await updateAuthProfile(user, data.displayName, photoURL);
+            await profileClient.updateAuthProfile(user, data.displayName, photoURL);
 
-            const token = await user.getIdToken();
-            await updateUserProfileApi(token, {
+            await profileClient.updateUserProfileApi({
                 displayName: data.displayName,
                 photoURL: photoURL,
-                birthDate: data.birthDate instanceof Date ? data.birthDate.toISOString() : new Date(data.birthDate).toISOString() as any,
+                birthDate: data.birthDate instanceof Date ? data.birthDate.toISOString() : new Date(data.birthDate).toISOString(),
                 hasPlayedBefore: data.hasPlayedBefore,
             });
 

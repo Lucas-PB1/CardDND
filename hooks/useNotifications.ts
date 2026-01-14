@@ -1,11 +1,6 @@
 import { useState, useEffect } from "react";
 import { useAuth } from "@/context/AuthContext";
-import {
-    subscribeToNotifications,
-    markAsRead as markAsReadApi,
-    markAllAsRead as markAllAsReadApi,
-    Notification
-} from "@/services/notificationService";
+import { notificationService, Notification } from "@/services/notificationService";
 
 export function useNotifications() {
     const { user } = useAuth();
@@ -19,7 +14,7 @@ export function useNotifications() {
             return;
         }
 
-        const unsubscribe = subscribeToNotifications(user.uid, (data) => {
+        const unsubscribe = notificationService.subscribeToNotifications(user.uid, (data) => {
             setNotifications(data);
             setUnreadCount(data.filter(n => !n.isRead).length);
         });
@@ -28,12 +23,12 @@ export function useNotifications() {
     }, [user]);
 
     const markAsRead = async (notificationId: string) => {
-        await markAsReadApi(notificationId);
+        await notificationService.markAsRead(notificationId);
     };
 
     const markAllAsRead = async () => {
         if (!user) return;
-        await markAllAsReadApi(user.uid);
+        await notificationService.markAllAsRead(user.uid);
     };
 
     return {

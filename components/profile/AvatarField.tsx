@@ -2,7 +2,7 @@
 
 import { useFilePreview } from "@/hooks/useFilePreview";
 
-interface AvatarFieldProps {
+export interface AvatarFieldProps {
     error?: string;
     onChange: (file: File | null) => void;
     value?: File;

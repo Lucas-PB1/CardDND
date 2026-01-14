@@ -1,12 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { useAuth } from "@/context/AuthContext";
-import {
-    searchUsersApi,
-    sendFriendRequestApi,
-    respondToRequestApi,
-    getSocialConnectionsApi,
-    cancelRequestApi
-} from "@/services/socialClientService";
+import { socialClient } from "@/services/socialClientService";
 import { UserProfile } from "@/services/userService";
 import { FriendRequestWithProfile } from "@/services/socialService";
 
@@ -29,7 +23,7 @@ export function useSocial() {
         if (!user) return;
         try {
             setIsLoading(true);
-            const data = await getSocialConnectionsApi();
+            const data = await socialClient.getSocialConnections();
 
             const myFriends = data.filter(c => c.status === "accepted");
             const incoming = data.filter(c => c.status === "pending" && !c.isRequester);
@@ -57,7 +51,7 @@ export function useSocial() {
         }
         try {
             setIsLoading(true);
-            const results = await searchUsersApi(query);
+            const results = await socialClient.searchUsers(query);
             setSearchResults(results);
         } catch (err) {
             setError("Search failed");
@@ -69,12 +63,13 @@ export function useSocial() {
     const sendRequest = async (recipientId: string) => {
         try {
             setActionLoading(recipientId);
-            await sendFriendRequestApi(recipientId);
+            await socialClient.sendFriendRequest(recipientId);
             setSuccessMessage("Friend request sent!");
             setSearchResults(prev => prev.filter(u => u.uid !== recipientId));
             loadConnections();
-        } catch (err: any) {
-            setError(err.message || "Failed to send request");
+        } catch (err) {
+            const error = err as Error;
+            setError(error.message || "Failed to send request");
         } finally {
             setActionLoading(null);
         }
@@ -83,7 +78,7 @@ export function useSocial() {
     const respondToRequest = async (requestId: string, status: "accepted" | "rejected") => {
         try {
             setActionLoading(requestId);
-            await respondToRequestApi(requestId, status);
+            await socialClient.respondToRequest(requestId, status);
             if (status === "accepted") {
                 setSuccessMessage("Friend request accepted!");
                 await loadConnections();
@@ -101,7 +96,7 @@ export function useSocial() {
     const cancelRequest = async (requestId: string) => {
         try {
             setActionLoading(requestId);
-            await cancelRequestApi(requestId);
+            await socialClient.cancelRequest(requestId);
             setSuccessMessage("Request cancelled.");
             setSentRequests(prev => prev.filter(r => r.id !== requestId));
         } catch (err) {
@@ -114,7 +109,7 @@ export function useSocial() {
     const removeFriend = async (friendshipId: string) => {
         try {
             setActionLoading(friendshipId);
-            await cancelRequestApi(friendshipId);
+            await socialClient.cancelRequest(friendshipId);
             setSuccessMessage("Friend removed.");
             setFriends(prev => prev.filter(f => f.id !== friendshipId));
         } catch (err) {
