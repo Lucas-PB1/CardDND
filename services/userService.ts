@@ -90,5 +90,27 @@ export async function logUserAccess(uid: string, email: string, action: AccessLo
 export async function getUserProfile(uid: string): Promise<UserProfile | null> {
     const doc = await adminDb.collection(COLLECTION_USERS).doc(uid).get();
     if (!doc.exists) return null;
-    return doc.data() as UserProfile;
+    const data = doc.data();
+    return {
+        ...data,
+        birthDate: data?.birthDate?.toDate ? data.birthDate.toDate() : data?.birthDate,
+        createdAt: data?.createdAt?.toDate ? data.createdAt.toDate() : data?.createdAt,
+        updatedAt: data?.updatedAt?.toDate ? data.updatedAt.toDate() : data?.updatedAt,
+    } as UserProfile;
+}
+
+/**
+ * Retrieves all user profiles (Admin only).
+ */
+export async function getAllUsers(): Promise<UserProfile[]> {
+    const snapshot = await adminDb.collection(COLLECTION_USERS).orderBy("createdAt", "desc").get();
+    return snapshot.docs.map(doc => {
+        const data = doc.data();
+        return {
+            ...data,
+            birthDate: data.birthDate?.toDate ? data.birthDate.toDate() : data.birthDate,
+            createdAt: data.createdAt?.toDate ? data.createdAt.toDate() : data.createdAt,
+            updatedAt: data.updatedAt?.toDate ? data.updatedAt.toDate() : data.updatedAt,
+        } as UserProfile;
+    });
 }
