@@ -27,7 +27,7 @@ export function ProfileForm() {
 
     if (loading) {
         return (
-            <div className="flex min-h-screen items-center justify-center bg-gray-950 text-white">
+            <div className="flex h-64 items-center justify-center text-white">
                 <div className="h-12 w-12 animate-spin rounded-full border-t-2 border-b-2 border-blue-500"></div>
             </div>
         );
@@ -60,13 +60,6 @@ export function ProfileForm() {
             label: "Birth Date",
         },
         {
-            name: "dndBeyondProfileUrl",
-            type: "text",
-            label: "D&D Beyond Character Sheet URL",
-            colSpan: 2,
-            placeholder: "https://www.dndbeyond.com/characters/123456",
-        },
-        {
             name: "hasPlayedBefore",
             type: "checkbox",
             label: "I have played Dungeons & Dragons before",
@@ -75,31 +68,25 @@ export function ProfileForm() {
     ];
 
     return (
-        <div className="min-h-screen bg-gray-950 px-4 pt-24 pb-12 text-white">
-            <div className="mx-auto max-w-2xl rounded-2xl border border-white/10 bg-gray-900 p-8 shadow-2xl">
-                <h1 className="mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-center text-3xl font-bold text-transparent">
-                    Your Profile
-                </h1>
+        <div className="space-y-6">
+            {message && (
+                <div
+                    className={`mb-6 rounded-lg p-4 ${message.type === "success" ? "border border-green-500/30 bg-green-500/20 text-green-400" : "border border-red-500/30 bg-red-500/20 text-red-400"}`}
+                >
+                    {message.text}
+                </div>
+            )}
 
-                {message && (
-                    <div
-                        className={`mb-6 rounded-lg p-4 ${message.type === "success" ? "border border-green-500/30 bg-green-500/20 text-green-400" : "border border-red-500/30 bg-red-500/20 text-red-400"}`}
-                    >
-                        {message.text}
-                    </div>
-                )}
-
-                {defaultValues && (
-                    <GenericForm<ProfileFormData>
-                        form={form}
-                        schema={profileSchema}
-                        onSubmit={onSubmit}
-                        fields={fields}
-                        submitText="Save Changes"
-                        loading={saving}
-                    />
-                )}
-            </div>
+            {defaultValues && (
+                <GenericForm<ProfileFormData>
+                    form={form}
+                    schema={profileSchema}
+                    onSubmit={onSubmit}
+                    fields={fields}
+                    submitText="Save Changes"
+                    loading={saving}
+                />
+            )}
         </div>
     );
 }

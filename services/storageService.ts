@@ -20,6 +20,21 @@ export class StorageService {
             throw error;
         }
     }
+
+    /**
+     * Uploads a character image to Firebase Storage.
+     */
+    async uploadCharacterImage(userId: string, characterId: string, file: File): Promise<string> {
+        try {
+            const compressedFile = await compressImage(file);
+            const storageRef = ref(storage, `characters/${userId}/${characterId}/${Date.now()}_${compressedFile.name}`);
+            await uploadBytes(storageRef, compressedFile);
+            return await getDownloadURL(storageRef);
+        } catch (error) {
+            console.error("Error uploading character image:", error);
+            throw error;
+        }
+    }
 }
 
 export const storageService = new StorageService();

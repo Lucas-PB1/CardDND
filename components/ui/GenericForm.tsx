@@ -91,20 +91,20 @@ function FormFieldItem<T extends FieldValues>({
     }
 
     if (field.type === "checkbox") {
-         return (
-             <div className="flex items-center gap-2">
-                 <input
-                     type="checkbox"
-                     id={field.name}
-                     {...register(field.name)}
-                     className="h-4 w-4 rounded border-gray-600 bg-gray-700 text-blue-500 focus:ring-blue-500"
-                 />
-                 <label htmlFor={field.name} className="text-sm font-medium text-gray-300">
-                     {field.label}
-                 </label>
-                 {error && <p className="text-sm text-red-400">{error}</p>}
-             </div>
-         );
+        return (
+            <div className="flex items-center gap-2">
+                <input
+                    type="checkbox"
+                    id={field.name}
+                    {...register(field.name)}
+                    className="h-4 w-4 rounded border-gray-600 bg-gray-700 text-blue-500 focus:ring-blue-500"
+                />
+                <label htmlFor={field.name} className="text-sm font-medium text-gray-300">
+                    {field.label}
+                </label>
+                {error && <p className="text-sm text-red-400">{error}</p>}
+            </div>
+        );
     }
 
     return (
@@ -175,11 +175,13 @@ export function GenericForm<T extends FieldValues>({
                     })}
                 </div>
 
-                <Button type="submit" isLoading={loading} className="w-full">
-                    {submitText}
-                </Button>
+                <div className="flex flex-col gap-3 sm:flex-row">
+                    <Button type="submit" isLoading={loading} className="w-full flex-1">
+                        {submitText}
+                    </Button>
 
-                {children}
+                    {children && <div className="w-full flex-1">{children}</div>}
+                </div>
             </form>
         </div>
     );

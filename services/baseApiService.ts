@@ -49,6 +49,20 @@ export abstract class BaseApiService {
         return res.json();
     }
 
+    protected async put<T, B>(url: string, body: B): Promise<T> {
+        const headers = await this.getAuthHeaders();
+        const res = await fetch(url, {
+            method: "PUT",
+            headers,
+            body: JSON.stringify(body),
+        });
+        if (!res.ok) {
+            const error = await res.json().catch(() => ({}));
+            throw new Error(error.error || `Failed to put ${url}`);
+        }
+        return res.json();
+    }
+
     protected async delete<T>(url: string): Promise<T> {
         const headers = await this.getAuthHeaders();
         const res = await fetch(url, {
