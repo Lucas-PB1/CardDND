@@ -29,16 +29,16 @@ export function AvatarField({
                         width={128}
                         height={128}
                         unoptimized
-                        className="h-full w-full rounded-full border-4 border-gray-800 object-cover shadow-lg"
+                        className="h-full w-full rounded-full border-4 border-dnd-border object-cover shadow-lg"
                     />
                 ) : (
-                    <div className="flex h-full w-full items-center justify-center rounded-full border-4 border-gray-800 bg-gray-800 text-4xl font-bold text-gray-600">
+                    <div className="flex h-full w-full items-center justify-center rounded-full border-4 border-dnd-gold/30 bg-muted/10 text-4xl font-bold text-dnd-gold">
                         {displayName ? displayName.charAt(0) : "U"}
                     </div>
                 )}
                 <label
                     htmlFor="avatar-upload"
-                    className="absolute right-0 bottom-0 cursor-pointer rounded-full border border-gray-900 bg-blue-600 p-2 text-white shadow-lg transition-colors hover:bg-blue-500"
+                    className="absolute right-0 bottom-0 cursor-pointer rounded-full border border-dnd-bg bg-dnd-crimson p-2 text-white shadow-lg transition-colors hover:bg-dnd-crimson/90"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +72,7 @@ export function AvatarField({
                     }}
                 />
             </div>
-            {error && <p className="text-center text-sm text-red-400">{error}</p>}
+            {error && <p className="text-center text-sm text-destructive">{error}</p>}
         </div>
     );
 }

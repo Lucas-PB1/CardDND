@@ -1,22 +1,59 @@
 @import "tailwindcss";
 
 :root {
-    --background: #ffffff;
-    --foreground: #171717;
+    /* Base Theme - Warm Parchment */
+    --background: #F5F2EB;
+    --foreground: #292524;
+    /* Warm Dark Gray */
+    --card: #FFFFFF;
+    --border: #E6E2D6;
+
+    /* D&D Brand Palette - Concentrated Red & Gold */
+    --color-dnd-red: #D92334;
+    /* More vibrant red */
+    --color-dnd-crimson: #991B1B;
+    /* Deep Crimson */
+    --color-dnd-blue: #1E3A8A;
+    /* Deep Blue for contrast if needed */
+    --color-dnd-azure: #2563EB;
+    --color-dnd-parchment: #F5F2EB;
+    --color-dnd-gold: #D4AF37;
+    /* Metallic Gold */
 }
 
 @theme inline {
     --color-background: var(--background);
     --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-border: var(--border);
+
     --font-sans: var(--font-geist-sans);
     --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
-    }
+    /* Semantic Mappings */
+    --color-dnd-bg: var(--background);
+    --color-dnd-fg: var(--foreground);
+    --color-dnd-card: var(--card);
+    --color-dnd-border: var(--border);
+
+    /* Brand Colors */
+    --color-dnd-red: var(--color-dnd-red);
+    --color-dnd-crimson: var(--color-dnd-crimson);
+    --color-dnd-blue: var(--color-dnd-blue);
+    --color-dnd-azure: var(--color-dnd-azure);
+    --color-dnd-parchment: var(--color-dnd-parchment);
+    --color-dnd-gold: var(--color-dnd-gold);
+
+    /* Functional Semantics */
+    --color-muted: color-mix(in srgb, var(--foreground) 60%, transparent);
+    --color-muted-foreground: color-mix(in srgb, var(--foreground) 60%, transparent);
+    --color-accent: var(--color-dnd-red);
+    --color-accent-foreground: #ffffff;
+    --color-destructive: var(--color-dnd-crimson);
+    --color-destructive-foreground: #ffffff;
+    --color-border: var(--border);
+    --color-input: color-mix(in srgb, var(--foreground) 10%, transparent);
+    --color-ring: var(--color-dnd-red);
 }
 
 body {

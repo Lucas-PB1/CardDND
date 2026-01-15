@@ -44,8 +44,8 @@ export const characterSchema = yup.object({
             return value.size <= 5000000;
         }),
     race: yup.string().nullable(),
-    stats: yup.object(statsSchema),
-    savingThrows: yup.object(savingThrowsSchema),
+    stats: yup.object(statsSchema) as yup.ObjectSchema<Record<AbilityScore, number>>,
+    savingThrows: yup.object(savingThrowsSchema) as yup.ObjectSchema<Record<AbilityScore, number>>,
     hp: yup.object({
         current: yup.number().default(0),
         max: yup.number().default(0),
@@ -55,7 +55,7 @@ export const characterSchema = yup.object({
     proficiencyBonus: yup.number().nullable(),
     initiative: yup.number().nullable(),
     armorClass: yup.number().nullable(),
-    skills: yup.object(skillsSchema),
+    skills: yup.object(skillsSchema) as yup.ObjectSchema<Record<Skill, number>>,
 });
 
 export interface CharacterFormData {

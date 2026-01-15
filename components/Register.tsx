@@ -45,11 +45,11 @@ export default function Register() {
     ];
 
     return (
-        <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-gray-900 to-black p-4 py-12">
-            <div className="w-full max-w-2xl rounded-2xl border border-white/20 bg-white/10 p-8 shadow-xl backdrop-blur-md">
+        <div className="flex min-h-screen items-center justify-center bg-dnd-bg p-4 py-12">
+            <div className="w-full max-w-2xl rounded-2xl border border-border bg-dnd-card p-8 shadow-xl">
                 <div className="mb-8 text-center">
-                    <h1 className="mb-2 text-3xl font-bold text-white">Create Account</h1>
-                    <p className="text-sm text-gray-300">Join the adventure today</p>
+                    <h1 className="mb-2 text-3xl font-bold text-dnd-fg">Create Account</h1>
+                    <p className="text-sm text-muted-foreground">Join the adventure today</p>
                 </div>
 
                 <GenericForm
@@ -61,11 +61,11 @@ export default function Register() {
                     globalError={globalError}
                     defaultValues={{ hasPlayedBefore: false }}
                 >
-                    <div className="mt-6 text-center text-sm text-gray-400">
+                    <div className="mt-6 text-center text-sm text-muted-foreground">
                         Already have an account?{" "}
                         <Link
                             href="/login"
-                            className="text-blue-400 hover:text-blue-300 hover:underline"
+                            className="text-dnd-red hover:text-dnd-crimson hover:underline"
                         >
                             Sign in
                         </Link>

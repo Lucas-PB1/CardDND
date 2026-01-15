@@ -112,12 +112,12 @@ function FormFieldItem<T extends FieldValues>({
                     type="checkbox"
                     id={field.name}
                     {...register(field.name)}
-                    className="h-4 w-4 rounded border-gray-600 bg-gray-700 text-blue-500 focus:ring-blue-500"
+                    className="h-4 w-4 rounded border-border bg-input text-dnd-red focus:ring-ring"
                 />
-                <label htmlFor={field.name} className="text-sm font-medium text-gray-300">
+                <label htmlFor={field.name} className="text-sm font-medium text-muted-foreground">
                     {field.label}
                 </label>
-                {error && <p className="text-sm text-red-400">{error}</p>}
+                {error && <p className="text-sm text-destructive">{error}</p>}
             </div>
         );
     }
@@ -162,7 +162,7 @@ export function GenericForm<T extends FieldValues>({
     return (
         <div className="w-full">
             {globalError && (
-                <div className="mb-4 rounded-lg border border-red-500/50 bg-red-500/20 p-3 text-sm text-red-200">
+                <div className="mb-4 rounded-lg border border-destructive/50 bg-destructive/10 p-3 text-sm text-destructive">
                     {globalError}
                 </div>
             )}

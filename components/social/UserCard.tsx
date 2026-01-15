@@ -23,9 +23,9 @@ export function UserCard({
     loading = false,
 }: UserCardProps) {
     return (
-        <div className="flex items-center justify-between rounded-xl border border-white/10 bg-white/5 p-4 transition-all hover:border-white/20">
+        <div className="flex items-center justify-between rounded-xl border border-border bg-dnd-card p-4 transition-all hover:border-dnd-red/30">
             <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-purple-500 text-lg font-bold text-white">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-muted/20 text-lg font-bold text-dnd-fg">
                     {user.photoURL ? (
                         <Image
                             src={user.photoURL}
@@ -39,8 +39,8 @@ export function UserCard({
                     )}
                 </div>
                 <div>
-                    <h3 className="font-semibold text-white">{user.displayName}</h3>
-                    <p className="text-sm text-gray-400">{user.email}</p>
+                    <h3 className="font-semibold text-dnd-fg">{user.displayName}</h3>
+                    <p className="text-sm text-muted-foreground">{user.email}</p>
                 </div>
             </div>
 

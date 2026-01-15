@@ -17,20 +17,19 @@ export function NotificationBell() {
         <div className="relative" ref={dropdownRef}>
             <button
                 onClick={toggleDropdown}
-                className="relative rounded-full p-2 text-gray-400 transition-colors hover:bg-white/5 hover:text-white focus:outline-none"
+                className="relative rounded-full p-2 text-dnd-parchment transition-colors hover:text-white hover:bg-white/10 focus:outline-none ring-2 ring-dnd-gold/50 hover:ring-dnd-gold"
             >
                 <Bell size={20} />
                 {unreadCount > 0 && (
-                    <span className="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-red-500 text-[10px] font-bold text-white">
+                    <span className="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-dnd-red text-[10px] font-bold text-white">
                         {unreadCount > 9 ? "9+" : unreadCount}
                     </span>
                 )}
             </button>
-
             {isOpen && (
-                <div className="absolute right-0 z-50 mt-2 w-80 overflow-hidden rounded-xl border border-white/10 bg-gray-900 shadow-2xl backdrop-blur-xl">
-                    <div className="flex items-center justify-between border-b border-white/10 bg-gray-800/50 px-4 py-3">
-                        <h3 className="text-sm font-semibold text-white">Notifications</h3>
+                <div className="absolute right-0 z-50 mt-2 w-80 overflow-hidden rounded-xl border border-border bg-dnd-card shadow-2xl backdrop-blur-xl">
+                    <div className="flex items-center justify-between border-b border-border bg-muted/10 px-4 py-3">
+                        <h3 className="text-sm font-semibold text-dnd-fg">Notifications</h3>
                         {unreadCount > 0 && (
                             <button
                                 onClick={handleMarkAllRead}
@@ -51,14 +50,13 @@ export function NotificationBell() {
                                 <div
                                     key={notification.id}
                                     onClick={() => handleNotificationClick(notification)}
-                                    className={`cursor-pointer border-b border-white/5 px-4 py-3 transition-colors last:border-0 hover:bg-white/5 ${
-                                        !notification.isRead ? "bg-blue-500/5" : ""
-                                    }`}
+                                    className={`cursor-pointer border-b border-border px-4 py-3 transition-colors last:border-0 hover:bg-muted/5 ${!notification.isRead ? "bg-blue-500/5" : ""
+                                        }`}
                                 >
                                     <div className="flex items-start justify-between gap-2">
                                         <div>
                                             <p
-                                                className={`text-sm ${!notification.isRead ? "font-medium text-white" : "text-gray-300"}`}
+                                                className={`text-sm ${!notification.isRead ? "font-medium text-dnd-fg" : "text-muted-foreground"}`}
                                             >
                                                 {notification.title}
                                             </p>

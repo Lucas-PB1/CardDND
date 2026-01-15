@@ -9,36 +9,32 @@ export const StatBox = ({ label, value, onChange, error }: { label: string; valu
     const modStr = modifier >= 0 ? `+${modifier}` : modifier;
 
     return (
-        <div className="flex flex-col items-center bg-gray-800/40 border border-white/10 rounded-xl p-3 hover:bg-gray-800/60 transition-all group">
-            <span className="text-[10px] font-bold text-blue-400/70 uppercase tracking-widest mb-1">{label}</span>
-            <div className="text-3xl font-black text-white leading-none mb-2">{modStr}</div>
-            <div className="mt-auto pt-2 border-t border-white/5 w-full flex justify-center">
+        <div className="flex flex-col items-center bg-muted/10 border border-border rounded-xl p-3 hover:bg-muted/20 transition-all group">
+            <span className="text-[10px] font-bold text-dnd-red/70 uppercase tracking-widest mb-1">{label}</span>
+            <div className="text-3xl font-black text-dnd-fg leading-none mb-2">{modStr}</div>
+            <div className="mt-auto pt-2 border-t border-border w-full flex justify-center">
                 <input
                     type="number"
                     value={value}
                     onChange={(e) => onChange(Number(e.target.value))}
-                    className="w-12 bg-transparent text-center text-xs font-bold text-gray-400 hover:text-white transition-colors outline-none"
+                    className="w-12 bg-transparent text-center text-xs font-bold text-muted-foreground hover:text-dnd-fg transition-colors outline-none"
                 />
             </div>
-            {error && <p className="text-[10px] text-red-500 mt-1">{error}</p>}
+            {error && <p className="text-[10px] text-destructive mt-1">{error}</p>}
         </div>
     );
 };
 
 export const SkillItem = ({ label, value, onChange }: { label: string; value: number; onChange: (val: number) => void }) => {
-    const bonus = Number(value || 0);
-    const bonusStr = bonus >= 0 ? `+${bonus}` : bonus;
-
     return (
-        <div className="flex items-center justify-between group p-1.5 hover:bg-white/5 rounded-lg transition-colors border-b border-white/[0.03]">
-            <p className="text-[11px] font-semibold text-gray-400 group-hover:text-gray-200 transition-colors uppercase tracking-tight">{label}</p>
+        <div className="flex items-center justify-between group py-2 px-2 transition-colors border-b border-border/50 hover:bg-muted/5">
+            <p className="text-xs font-bold text-dnd-fg uppercase tracking-tight flex-1 pr-2">{label}</p>
             <div className="flex items-center gap-3">
-                <span className="text-xs font-bold text-blue-400 w-6 text-right">{bonusStr}</span>
                 <input
                     type="number"
                     value={value}
                     onChange={(e) => onChange(Number(e.target.value))}
-                    className="w-8 bg-transparent text-center text-[10px] font-bold text-gray-600 hover:text-gray-400 transition-colors outline-none"
+                    className="w-12 bg-transparent text-right text-base font-black text-dnd-crimson transition-colors outline-none border-b border-transparent hover:border-dnd-crimson/50 focus:border-dnd-crimson pb-0.5 placeholder:text-muted-foreground/30"
                 />
             </div>
         </div>
@@ -47,10 +43,10 @@ export const SkillItem = ({ label, value, onChange }: { label: string; value: nu
 
 export const SectionHeader = ({ label }: { label: string }) => (
     <div className="flex items-center gap-4 py-4 mt-4 first:mt-0">
-        <h3 className="text-xs font-black text-blue-400/80 uppercase tracking-[0.2em] whitespace-nowrap">
+        <h3 className="text-xs font-black text-dnd-red/80 uppercase tracking-[0.2em] whitespace-nowrap">
             {label}
         </h3>
-        <div className="h-px w-full bg-gradient-to-r from-blue-400/20 to-transparent" />
+        <div className="h-px w-full bg-gradient-to-r from-dnd-red/20 to-transparent" />
     </div>
 );
 
@@ -115,7 +111,7 @@ export const SkillsField = ({ value, onChange }: CustomComponentProps<CharacterF
     };
 
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-1 bg-gray-900/50 p-4 rounded-xl border border-white/5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-1 p-2">
             {Object.entries(SKILL_METADATA).map(([skillKey, metadata]) => (
                 <SkillItem
                     key={skillKey}

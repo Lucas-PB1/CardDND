@@ -16,7 +16,7 @@ export default function AdminUsers() {
             key: "role",
             render: (u) => (
                 <span
-                    className={`rounded px-2 py-1 text-xs font-bold ${u.role === "admin" ? "bg-purple-500/20 text-purple-400" : "bg-blue-500/20 text-blue-400"}`}
+                    className={`rounded px-2 py-1 text-xs font-bold ${u.role === "admin" ? "bg-dnd-red/10 text-dnd-red" : "bg-dnd-azure/10 text-dnd-azure"}`}
                 >
                     {u.role.toUpperCase()}
                 </span>
@@ -43,10 +43,10 @@ export default function AdminUsers() {
     if (authLoading) return null;
 
     return (
-        <div className="min-h-screen bg-gray-950 px-6 pt-24 text-white">
+        <div className="min-h-screen bg-dnd-bg px-6 pt-24 text-dnd-fg">
             <div className="container mx-auto">
                 <div className="mb-8 flex items-center justify-between">
-                    <h1 className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-3xl font-bold text-transparent">
+                    <h1 className="bg-gradient-to-r from-dnd-red to-dnd-gold bg-clip-text text-3xl font-bold text-transparent">
                         Admin Dashboard
                     </h1>
                     <Button onClick={loadUsers} variant="secondary">
@@ -56,7 +56,7 @@ export default function AdminUsers() {
 
                 {message && (
                     <div
-                        className={`mb-6 rounded-lg p-4 ${message.type === "success" ? "bg-green-500/20 text-green-400" : "bg-red-500/20 text-red-400"}`}
+                        className={`mb-6 rounded-lg p-4 ${message.type === "success" ? "bg-green-100 text-green-800" : "bg-destructive/10 text-destructive"}`}
                     >
                         {message.text}
                     </div>

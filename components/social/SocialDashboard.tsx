@@ -74,12 +74,12 @@ export default function SocialDashboard() {
     };
 
     return (
-        <div className="min-h-screen bg-gray-950 px-6 pt-24 leading-relaxed text-white">
+        <div className="min-h-screen bg-dnd-bg px-6 pt-24 leading-relaxed text-dnd-fg">
             <div className="container mx-auto max-w-4xl">
                 <h1 className="mb-2 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-3xl font-bold text-transparent">
                     Social Hub
                 </h1>
-                <p className="mb-8 text-gray-400">
+                <p className="mb-8 text-muted-foreground">
                     Connect with other players and build your party.
                 </p>
 
@@ -87,25 +87,25 @@ export default function SocialDashboard() {
                 <div className="mb-8 flex gap-4 overflow-x-auto border-b border-white/10">
                     <button
                         onClick={() => setActiveTab("friends")}
-                        className={`border-b-2 px-2 pb-3 text-sm font-medium whitespace-nowrap transition-colors ${activeTab === "friends" ? "border-blue-500 text-blue-400" : "border-transparent text-gray-400 hover:text-gray-300"}`}
+                        className={`border-b-2 px-2 pb-3 text-sm font-medium whitespace-nowrap transition-colors ${activeTab === "friends" ? "border-dnd-blue text-dnd-blue" : "border-transparent text-muted-foreground hover:text-dnd-fg"}`}
                     >
                         My Friends ({friends.length})
                     </button>
                     <button
                         onClick={() => setActiveTab("requests")}
-                        className={`border-b-2 px-2 pb-3 text-sm font-medium whitespace-nowrap transition-colors ${activeTab === "requests" ? "border-purple-500 text-purple-400" : "border-transparent text-gray-400 hover:text-gray-300"}`}
+                        className={`border-b-2 px-2 pb-3 text-sm font-medium whitespace-nowrap transition-colors ${activeTab === "requests" ? "border-dnd-crimson text-dnd-crimson" : "border-transparent text-muted-foreground hover:text-dnd-fg"}`}
                     >
                         Requests ({incomingRequests.length})
                     </button>
                     <button
                         onClick={() => setActiveTab("sent")}
-                        className={`border-b-2 px-2 pb-3 text-sm font-medium whitespace-nowrap transition-colors ${activeTab === "sent" ? "border-yellow-500 text-yellow-400" : "border-transparent text-gray-400 hover:text-gray-300"}`}
+                        className={`border-b-2 px-2 pb-3 text-sm font-medium whitespace-nowrap transition-colors ${activeTab === "sent" ? "border-dnd-gold text-dnd-gold" : "border-transparent text-muted-foreground hover:text-dnd-fg"}`}
                     >
                         Sent ({sentRequests.length})
                     </button>
                     <button
                         onClick={() => setActiveTab("find")}
-                        className={`border-b-2 px-2 pb-3 text-sm font-medium whitespace-nowrap transition-colors ${activeTab === "find" ? "border-green-500 text-green-400" : "border-transparent text-gray-400 hover:text-gray-300"}`}
+                        className={`border-b-2 px-2 pb-3 text-sm font-medium whitespace-nowrap transition-colors ${activeTab === "find" ? "border-green-600 text-green-600" : "border-transparent text-muted-foreground hover:text-dnd-fg"}`}
                     >
                         Find Players
                     </button>
@@ -113,7 +113,7 @@ export default function SocialDashboard() {
 
                 {/* Messages */}
                 {error && (
-                    <div className="mb-6 flex items-center justify-between rounded-xl bg-red-500/20 p-4 text-red-400">
+                    <div className="mb-6 flex items-center justify-between rounded-xl bg-destructive/10 p-4 text-destructive">
                         {error}
                         <button
                             onClick={clearMessages}
@@ -124,7 +124,7 @@ export default function SocialDashboard() {
                     </div>
                 )}
                 {successMessage && (
-                    <div className="mb-6 flex items-center justify-between rounded-xl bg-green-500/20 p-4 text-green-400">
+                    <div className="mb-6 flex items-center justify-between rounded-xl bg-green-100 p-4 text-green-800">
                         {successMessage}
                         <button
                             onClick={clearMessages}
@@ -137,12 +137,12 @@ export default function SocialDashboard() {
 
                 {/* Content */}
                 <div className="space-y-4">
-                    {isLoading && <div className="py-8 text-center text-gray-500">Loading...</div>}
+                    {isLoading && <div className="py-8 text-center text-muted-foreground">Loading...</div>}
 
                     {!isLoading && activeTab === "friends" && (
                         <div>
                             {friends.length === 0 ? (
-                                <div className="py-12 text-center text-gray-500">
+                                <div className="py-12 text-center text-muted-foreground">
                                     <p>You haven&apos;t added any friends yet.</p>
                                     <Button
                                         onClick={() => setActiveTab("find")}
@@ -186,7 +186,7 @@ export default function SocialDashboard() {
                     {!isLoading && activeTab === "requests" && (
                         <div>
                             {incomingRequests.length === 0 ? (
-                                <div className="py-12 text-center text-gray-500">
+                                <div className="py-12 text-center text-muted-foreground">
                                     <p>No pending friend requests.</p>
                                 </div>
                             ) : (
@@ -211,7 +211,7 @@ export default function SocialDashboard() {
                     {!isLoading && activeTab === "sent" && (
                         <div>
                             {sentRequests.length === 0 ? (
-                                <div className="py-12 text-center text-gray-500">
+                                <div className="py-12 text-center text-muted-foreground">
                                     <p>No sent requests.</p>
                                 </div>
                             ) : (
@@ -261,7 +261,7 @@ export default function SocialDashboard() {
                                     />
                                 ))}
                                 {searchResults.length === 0 && searchQuery && !isLoading && (
-                                    <p className="mt-8 text-center text-gray-500">
+                                    <p className="mt-8 text-center text-muted-foreground">
                                         No users found.
                                     </p>
                                 )}

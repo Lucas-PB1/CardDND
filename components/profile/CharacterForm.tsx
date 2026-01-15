@@ -26,9 +26,9 @@ export function CharacterForm({ initialData, onSubmit, onCancel, isLoading }: Ch
     const fields = useMemo(() => getCharacterFormFields(initialData), [initialData]);
 
     return (
-        <div className="rounded-xl border border-white/10 bg-gray-900 p-6">
+        <div className="rounded-xl border border-border bg-dnd-card p-6">
             <div className="mb-6 flex items-center justify-between">
-                <h2 className="text-xl font-bold text-white">
+                <h2 className="text-xl font-bold text-dnd-fg">
                     {initialData ? "Edit Character" : "New Character"}
                 </h2>
                 {!initialData && (

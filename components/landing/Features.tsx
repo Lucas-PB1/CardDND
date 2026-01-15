@@ -48,11 +48,11 @@ const FEATURES = [
 
 export function Features() {
     return (
-        <section id="features" className="bg-gray-900/50 py-20">
+        <section id="features" className="bg-muted/10 py-20">
             <div className="container mx-auto px-6">
                 <div className="mb-16 text-center">
                     <h2 className="mb-4 text-3xl font-bold">Everything You Need</h2>
-                    <p className="text-gray-400">Dozens of powerful tools at your fingertips.</p>
+                    <p className="text-muted-foreground">Dozens of powerful tools at your fingertips.</p>
                 </div>
 
                 <div className="grid gap-8 text-left md:grid-cols-3">
