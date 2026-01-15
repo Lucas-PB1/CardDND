@@ -8,7 +8,6 @@ export function useNotifications() {
     const [notifications, setNotifications] = useState<Notification[]>([]);
     const [unreadCount, setUnreadCount] = useState(0);
 
-    // Reset state during render when user logs out to avoid cascading renders in useEffect
     if (!user && (notifications.length > 0 || unreadCount > 0)) {
         setNotifications([]);
         setUnreadCount(0);

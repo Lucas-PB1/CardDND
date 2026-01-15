@@ -42,13 +42,14 @@ export class UserController extends BaseController {
             const { uid } = decodedToken;
 
             const body = await request.json();
-            const { displayName, photoURL, birthDate, hasPlayedBefore } = body;
+            const { displayName, photoURL, birthDate, hasPlayedBefore, dndBeyondProfileUrl } = body;
 
             const updateData: Partial<UserProfile> = {};
             if (displayName !== undefined) updateData.displayName = displayName;
             if (photoURL !== undefined) updateData.photoURL = photoURL;
             if (birthDate !== undefined) updateData.birthDate = new Date(birthDate);
             if (hasPlayedBefore !== undefined) updateData.hasPlayedBefore = hasPlayedBefore;
+            if (dndBeyondProfileUrl !== undefined) updateData.dndBeyondProfileUrl = dndBeyondProfileUrl;
 
             const updatedProfile = await userService.updateUserProfile(uid, updateData);
 

@@ -7,9 +7,9 @@ dotenv.config();
 const config = {
     email: process.env.DND_BEYOND_EMAIL,
     password: process.env.DND_BEYOND_PASSWORD,
-    authFile: path.join(process.cwd(), 'auth.json'),
+    authFile: path.join(__dirname, '../auth.json'),
     targetUrl: 'https://www.dndbeyond.com/sources/dnd/mm-2024/monster-lists#MonstersbyChallengeRating',
-    outputFile: path.join(process.cwd(), 'monsters.json')
+    outputFile: path.join(__dirname, '../public/monsters.json')
 };
 
 async function main() {

@@ -1,0 +1,2507 @@
+[
+  {
+    "name": "Awakened Shrub",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-a#AwakenedShrub"
+  },
+  {
+    "name": "Baboon",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Baboon"
+  },
+  {
+    "name": "Badger",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Badger"
+  },
+  {
+    "name": "Bat",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Bat"
+  },
+  {
+    "name": "Cat",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Cat"
+  },
+  {
+    "name": "Commoner",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#Commoner"
+  },
+  {
+    "name": "Crab",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Crab"
+  },
+  {
+    "name": "Crawling Claw",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#CrawlingClaw"
+  },
+  {
+    "name": "Deer",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Deer"
+  },
+  {
+    "name": "Eagle",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Eagle"
+  },
+  {
+    "name": "Frog",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Frog"
+  },
+  {
+    "name": "Giant Fire Beetle",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantFireBeetle"
+  },
+  {
+    "name": "Goat",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Goat"
+  },
+  {
+    "name": "Hawk",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Hawk"
+  },
+  {
+    "name": "Homunculus",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#Homunculus"
+  },
+  {
+    "name": "Hyena",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Hyena"
+  },
+  {
+    "name": "Jackal",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Jackal"
+  },
+  {
+    "name": "Larva",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-l#Larva"
+  },
+  {
+    "name": "Lemure",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-l#Lemure"
+  },
+  {
+    "name": "Lizard",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Lizard"
+  },
+  {
+    "name": "Myconid Sprout",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#MyconidSprout"
+  },
+  {
+    "name": "Octopus",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Octopus"
+  },
+  {
+    "name": "Owl",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Owl"
+  },
+  {
+    "name": "Piranha",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Piranha"
+  },
+  {
+    "name": "Rat",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Rat"
+  },
+  {
+    "name": "Raven",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Raven"
+  },
+  {
+    "name": "Scorpion",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Scorpion"
+  },
+  {
+    "name": "Seahorse",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Seahorse"
+  },
+  {
+    "name": "Shrieker Fungus",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-f#ShriekerFungus"
+  },
+  {
+    "name": "Spider",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Spider"
+  },
+  {
+    "name": "Vulture",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Vulture"
+  },
+  {
+    "name": "Weasel",
+    "cr": "CR 0",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Weasel"
+  },
+  {
+    "name": "Bandit",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#Bandit"
+  },
+  {
+    "name": "Blood Hawk",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#BloodHawk"
+  },
+  {
+    "name": "Camel",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Camel"
+  },
+  {
+    "name": "Cultist",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#Cultist"
+  },
+  {
+    "name": "Flumph",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-f#Flumph"
+  },
+  {
+    "name": "Flying Snake",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#FlyingSnake"
+  },
+  {
+    "name": "Giant Crab",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantCrab"
+  },
+  {
+    "name": "Giant Rat",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantRat"
+  },
+  {
+    "name": "Giant Weasel",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantWeasel"
+  },
+  {
+    "name": "Goblin Minion",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GoblinMinion"
+  },
+  {
+    "name": "Guard",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Guard"
+  },
+  {
+    "name": "Kobold Warrior",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-k#KoboldWarrior"
+  },
+  {
+    "name": "Manes",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#Manes"
+  },
+  {
+    "name": "Mastiff",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Mastiff"
+  },
+  {
+    "name": "Merfolk Skirmisher",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#MerfolkSkirmisher"
+  },
+  {
+    "name": "Modron Monodrone",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#ModronMonodrone"
+  },
+  {
+    "name": "Mule",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Mule"
+  },
+  {
+    "name": "Noble",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-n#Noble"
+  },
+  {
+    "name": "Pony",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Pony"
+  },
+  {
+    "name": "Slaad Tadpole",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#SlaadTadpole"
+  },
+  {
+    "name": "Stirge",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#Stirge"
+  },
+  {
+    "name": "Twig Blight",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#TwigBlight"
+  },
+  {
+    "name": "Venomous Snake",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#VenomousSnake"
+  },
+  {
+    "name": "Warrior Infantry",
+    "cr": "CR 1/8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-w#WarriorInfantry"
+  },
+  {
+    "name": "Aarakocra Skirmisher",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-a#AarakocraSkirmisher"
+  },
+  {
+    "name": "Animated Broom",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-a#AnimatedBroom"
+  },
+  {
+    "name": "Animated Flying Sword",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-a#AnimatedFlyingSword"
+  },
+  {
+    "name": "Axe Beak",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-a#AxeBeak"
+  },
+  {
+    "name": "Blink Dog",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#BlinkDog"
+  },
+  {
+    "name": "Boar",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Boar"
+  },
+  {
+    "name": "Bullywug Warrior",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#BullywugWarrior"
+  },
+  {
+    "name": "Constrictor Snake",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#ConstrictorSnake"
+  },
+  {
+    "name": "Draft Horse",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#DraftHorse"
+  },
+  {
+    "name": "Dretch",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#Dretch"
+  },
+  {
+    "name": "Elk",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Elk"
+  },
+  {
+    "name": "Giant Badger",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantBadger"
+  },
+  {
+    "name": "Giant Bat",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantBat"
+  },
+  {
+    "name": "Giant Centipede",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantCentipede"
+  },
+  {
+    "name": "Giant Frog",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantFrog"
+  },
+  {
+    "name": "Giant Lizard",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantLizard"
+  },
+  {
+    "name": "Giant Owl",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantOwl"
+  },
+  {
+    "name": "Giant Venomous Snake",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantVenomousSnake"
+  },
+  {
+    "name": "Giant Wolf Spider",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantWolfSpider"
+  },
+  {
+    "name": "Goblin Warrior",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GoblinWarrior"
+  },
+  {
+    "name": "Grimlock",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Grimlock"
+  },
+  {
+    "name": "Kenku",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-k#Kenku"
+  },
+  {
+    "name": "Kuo-toa",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-k#Kuotoa"
+  },
+  {
+    "name": "Modron Duodrone",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#ModronDuodrone"
+  },
+  {
+    "name": "Mud Mephit",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#MudMephit"
+  },
+  {
+    "name": "Needle Blight",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#NeedleBlight"
+  },
+  {
+    "name": "Panther",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Panther"
+  },
+  {
+    "name": "Pixie",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#Pixie"
+  },
+  {
+    "name": "Priest Acolyte",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#PriestAcolyte"
+  },
+  {
+    "name": "Pseudodragon",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#Pseudodragon"
+  },
+  {
+    "name": "Pteranodon",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Pteranodon"
+  },
+  {
+    "name": "Riding Horse",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#RidingHorse"
+  },
+  {
+    "name": "Skeleton",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#Skeleton"
+  },
+  {
+    "name": "Smoke Mephit",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#SmokeMephit"
+  },
+  {
+    "name": "Sprite",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#Sprite"
+  },
+  {
+    "name": "Steam Mephit",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#SteamMephit"
+  },
+  {
+    "name": "Swarm of Bats",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#SwarmofBats"
+  },
+  {
+    "name": "Swarm of Rats",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#SwarmofRats"
+  },
+  {
+    "name": "Swarm of Ravens",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#SwarmofRavens"
+  },
+  {
+    "name": "Troglodyte",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-t#Troglodyte"
+  },
+  {
+    "name": "Violet Fungus",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-f#VioletFungus"
+  },
+  {
+    "name": "Winged Kobold",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-k#WingedKobold"
+  },
+  {
+    "name": "Wolf",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Wolf"
+  },
+  {
+    "name": "Zombie",
+    "cr": "CR 1/4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-z#Zombie"
+  },
+  {
+    "name": "Ape",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Ape"
+  },
+  {
+    "name": "Black Bear",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#BlackBear"
+  },
+  {
+    "name": "Cockatrice",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#Cockatrice"
+  },
+  {
+    "name": "Crocodile",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Crocodile"
+  },
+  {
+    "name": "Darkmantle",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#Darkmantle"
+  },
+  {
+    "name": "Dust Mephit",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#DustMephit"
+  },
+  {
+    "name": "Gas Spore Fungus",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-f#GasSporeFungus"
+  },
+  {
+    "name": "Giant Goat",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantGoat"
+  },
+  {
+    "name": "Giant Seahorse",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantSeahorse"
+  },
+  {
+    "name": "Giant Wasp",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantWasp"
+  },
+  {
+    "name": "Gnoll Warrior",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GnollWarrior"
+  },
+  {
+    "name": "Gray Ooze",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GrayOoze"
+  },
+  {
+    "name": "Hobgoblin Warrior",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#HobgoblinWarrior"
+  },
+  {
+    "name": "Ice Mephit",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#IceMephit"
+  },
+  {
+    "name": "Jackalwere",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-j#Jackalwere"
+  },
+  {
+    "name": "Magma Mephit",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#MagmaMephit"
+  },
+  {
+    "name": "Magmin",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#Magmin"
+  },
+  {
+    "name": "Modron Tridrone",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#ModronTridrone"
+  },
+  {
+    "name": "Myconid Adult",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#MyconidAdult"
+  },
+  {
+    "name": "Performer",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#Performer"
+  },
+  {
+    "name": "Piercer",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#Piercer"
+  },
+  {
+    "name": "Reef Shark",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#ReefShark"
+  },
+  {
+    "name": "Rust Monster",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-r#RustMonster"
+  },
+  {
+    "name": "Sahuagin Warrior",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#SahuaginWarrior"
+  },
+  {
+    "name": "Satyr",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#Satyr"
+  },
+  {
+    "name": "Scout",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#Scout"
+  },
+  {
+    "name": "Shadow",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#Shadow"
+  },
+  {
+    "name": "Swarm of Insects",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#SwarmofInsects"
+  },
+  {
+    "name": "Tough",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-t#Tough"
+  },
+  {
+    "name": "Troll Limb",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-t#TrollLimbStatBlock"
+  },
+  {
+    "name": "Vine Blight",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#VineBlight"
+  },
+  {
+    "name": "Warhorse",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Warhorse"
+  },
+  {
+    "name": "Warhorse Skeleton",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#WarhorseSkeleton"
+  },
+  {
+    "name": "Worg",
+    "cr": "CR 1/2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-w#Worg"
+  },
+  {
+    "name": "Animated Armor",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-a#AnimatedArmor"
+  },
+  {
+    "name": "Brass Dragon Wyrmling",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#BrassDragonWyrmling"
+  },
+  {
+    "name": "Brown Bear",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#BrownBear"
+  },
+  {
+    "name": "Bugbear Warrior",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#BugbearWarrior"
+  },
+  {
+    "name": "Copper Dragon Wyrmling",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#CopperDragonWyrmling"
+  },
+  {
+    "name": "Death Dog",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#DeathDog"
+  },
+  {
+    "name": "Dire Wolf",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#DireWolf"
+  },
+  {
+    "name": "Dryad",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#Dryad"
+  },
+  {
+    "name": "Empyrean Iota",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-e#EmpyreanIota"
+  },
+  {
+    "name": "Faerie Dragon Youth",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-f#FaerieDragonYouth"
+  },
+  {
+    "name": "Ghoul",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Ghoul"
+  },
+  {
+    "name": "Giant Eagle",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantEagle"
+  },
+  {
+    "name": "Giant Hyena",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantHyena"
+  },
+  {
+    "name": "Giant Octopus",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantOctopus"
+  },
+  {
+    "name": "Giant Spider",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantSpider"
+  },
+  {
+    "name": "Giant Toad",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantToad"
+  },
+  {
+    "name": "Giant Vulture",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantVulture"
+  },
+  {
+    "name": "Goblin Boss",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GoblinBoss"
+  },
+  {
+    "name": "Harpy",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#Harpy"
+  },
+  {
+    "name": "Hippogriff",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#Hippogriff"
+  },
+  {
+    "name": "Imp",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-i#Imp"
+  },
+  {
+    "name": "Kuo-toa Whip",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-k#KuotoaWhip"
+  },
+  {
+    "name": "Lacedon Ghoul",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#LacedonGhoul"
+  },
+  {
+    "name": "Lion",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Lion"
+  },
+  {
+    "name": "Manes Vaporspawn",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#ManesVaporspawn"
+  },
+  {
+    "name": "Modron Quadrone",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#ModronQuadrone"
+  },
+  {
+    "name": "Myconid Spore Servant",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#MyconidSporeServant"
+  },
+  {
+    "name": "Ogrillon Ogre",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-o#OgrillonOgre"
+  },
+  {
+    "name": "Pirate",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#Pirate"
+  },
+  {
+    "name": "Psychic Gray Ooze",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#PsychicGrayOoze"
+  },
+  {
+    "name": "Quasit",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-q#Quasit"
+  },
+  {
+    "name": "Salamander Fire Snake",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#SalamanderFireSnake"
+  },
+  {
+    "name": "Scarecrow",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#Scarecrow"
+  },
+  {
+    "name": "Specter",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#Specter"
+  },
+  {
+    "name": "Sphinx of Wonder",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#SphinxofWonder"
+  },
+  {
+    "name": "Spy",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#Spy"
+  },
+  {
+    "name": "Swarm of Larvae",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-l#SwarmofLarvae"
+  },
+  {
+    "name": "Swarm of Piranhas",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#SwarmofPiranhas"
+  },
+  {
+    "name": "Thri-kreen Marauder",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-t#ThrikreenMarauder"
+  },
+  {
+    "name": "Tiger",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Tiger"
+  },
+  {
+    "name": "Yuan-ti Infiltrator",
+    "cr": "CR 1",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-y#YuantiInfiltrator"
+  },
+  {
+    "name": "Allosaurus",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Allosaurus"
+  },
+  {
+    "name": "Animated Rug of Smothering",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-a#AnimatedRugofSmothering"
+  },
+  {
+    "name": "Ankheg",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-a#Ankheg"
+  },
+  {
+    "name": "Awakened Tree",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-a#AwakenedTree"
+  },
+  {
+    "name": "Azer Sentinel",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-a#AzerSentinel"
+  },
+  {
+    "name": "Bandit Captain",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#BanditCaptain"
+  },
+  {
+    "name": "Berserker",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#Berserker"
+  },
+  {
+    "name": "Black Dragon Wyrmling",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#BlackDragonWyrmling"
+  },
+  {
+    "name": "Bronze Dragon Wyrmling",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#BronzeDragonWyrmling"
+  },
+  {
+    "name": "Bulette Pup",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#BulettePup"
+  },
+  {
+    "name": "Carrion Crawler",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#CarrionCrawler"
+  },
+  {
+    "name": "Centaur Trooper",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#CentaurTrooper"
+  },
+  {
+    "name": "Cultist Fanatic",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#CultistFanatic"
+  },
+  {
+    "name": "Druid",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#Druid"
+  },
+  {
+    "name": "Ettercap",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-e#Ettercap"
+  },
+  {
+    "name": "Faerie Dragon Adult",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-f#FaerieDragonAdult"
+  },
+  {
+    "name": "Gargoyle",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Gargoyle"
+  },
+  {
+    "name": "Gelatinous Cube",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GelatinousCube"
+  },
+  {
+    "name": "Ghast",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Ghast"
+  },
+  {
+    "name": "Giant Boar",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantBoar"
+  },
+  {
+    "name": "Giant Constrictor Snake",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantConstrictorSnake"
+  },
+  {
+    "name": "Giant Elk",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantElk"
+  },
+  {
+    "name": "Gibbering Mouther",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GibberingMouther"
+  },
+  {
+    "name": "Githzerai Monk",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GithzeraiMonk"
+  },
+  {
+    "name": "Gnoll Pack Lord",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GnollPackLord"
+  },
+  {
+    "name": "Green Dragon Wyrmling",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GreenDragonWyrmling"
+  },
+  {
+    "name": "Grick",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Grick"
+  },
+  {
+    "name": "Griffon",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Griffon"
+  },
+  {
+    "name": "Hunter Shark",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#HunterShark"
+  },
+  {
+    "name": "Intellect Devourer",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-i#IntellectDevourer"
+  },
+  {
+    "name": "Lizardfolk Geomancer",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-l#LizardfolkGeomancer"
+  },
+  {
+    "name": "Mage Apprentice",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#MageApprentice"
+  },
+  {
+    "name": "Merrow",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#Merrow"
+  },
+  {
+    "name": "Mimic",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#Mimic"
+  },
+  {
+    "name": "Minotaur Skeleton",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#MinotaurSkeleton"
+  },
+  {
+    "name": "Modron Pentadrone",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#ModronPentadrone"
+  },
+  {
+    "name": "Myconid Sovereign",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#MyconidSovereign"
+  },
+  {
+    "name": "Nothic",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-n#Nothic"
+  },
+  {
+    "name": "Ochre Jelly",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-o#OchreJelly"
+  },
+  {
+    "name": "Ogre",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-o#Ogre"
+  },
+  {
+    "name": "Ogre Zombie",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-z#OgreZombie"
+  },
+  {
+    "name": "Pegasus",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#Pegasus"
+  },
+  {
+    "name": "Peryton",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#Peryton"
+  },
+  {
+    "name": "Plesiosaurus",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Plesiosaurus"
+  },
+  {
+    "name": "Polar Bear",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#PolarBear"
+  },
+  {
+    "name": "Poltergeist",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#Poltergeist"
+  },
+  {
+    "name": "Priest",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#Priest"
+  },
+  {
+    "name": "Quaggoth",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-q#Quaggoth"
+  },
+  {
+    "name": "Rhinoceros",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Rhinoceros"
+  },
+  {
+    "name": "Saber-Toothed Tiger",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#SaberToothedTiger"
+  },
+  {
+    "name": "Sahuagin Priest",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#SahuaginPriest"
+  },
+  {
+    "name": "Sea Hag",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#SeaHag"
+  },
+  {
+    "name": "Silver Dragon Wyrmling",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#SilverDragonWyrmling"
+  },
+  {
+    "name": "Spined Devil",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#SpinedDevil"
+  },
+  {
+    "name": "Swarm of Stirges",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#SwarmofStirges"
+  },
+  {
+    "name": "Swarm of Venomous Snakes",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#SwarmofVenomousSnakes"
+  },
+  {
+    "name": "Wererat",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-w#Wererat"
+  },
+  {
+    "name": "White Dragon Wyrmling",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-w#WhiteDragonWyrmling"
+  },
+  {
+    "name": "Will-o’-Wisp",
+    "cr": "CR 2",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-w#WilloWisp"
+  },
+  {
+    "name": "Ankylosaurus",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Ankylosaurus"
+  },
+  {
+    "name": "Basilisk",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#Basilisk"
+  },
+  {
+    "name": "Bearded Devil",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#BeardedDevil"
+  },
+  {
+    "name": "Blue Dragon Wyrmling",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#BlueDragonWyrmling"
+  },
+  {
+    "name": "Bugbear Stalker",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#BugbearStalker"
+  },
+  {
+    "name": "Displacer Beast",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#DisplacerBeast"
+  },
+  {
+    "name": "Doppelganger",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#Doppelganger"
+  },
+  {
+    "name": "Flaming Skeleton",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#FlamingSkeleton"
+  },
+  {
+    "name": "Giant Scorpion",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantScorpion"
+  },
+  {
+    "name": "Githyanki Warrior",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GithyankiWarrior"
+  },
+  {
+    "name": "Goblin Hexer",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GoblinHexer"
+  },
+  {
+    "name": "Gold Dragon Wyrmling",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GoldDragonWyrmling"
+  },
+  {
+    "name": "Green Hag",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GreenHag"
+  },
+  {
+    "name": "Grell",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Grell"
+  },
+  {
+    "name": "Hell Hound",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#HellHound"
+  },
+  {
+    "name": "Hobgoblin Captain",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#HobgoblinCaptain"
+  },
+  {
+    "name": "Hook Horror",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#HookHorror"
+  },
+  {
+    "name": "Killer Whale",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#KillerWhale"
+  },
+  {
+    "name": "Knight",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-k#Knight"
+  },
+  {
+    "name": "Kuo-toa Monitor",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-k#KuotoaMonitor"
+  },
+  {
+    "name": "Manticore",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#Manticore"
+  },
+  {
+    "name": "Minotaur of Baphomet",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#MinotaurofBaphomet"
+  },
+  {
+    "name": "Mummy",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#Mummy"
+  },
+  {
+    "name": "Nightmare",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-n#Nightmare"
+  },
+  {
+    "name": "Owlbear",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-o#Owlbear"
+  },
+  {
+    "name": "Phase Spider",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#PhaseSpider"
+  },
+  {
+    "name": "Quaggoth Thonot",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-q#QuaggothThonot"
+  },
+  {
+    "name": "Scout Captain",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#ScoutCaptain"
+  },
+  {
+    "name": "Spectator",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#Spectator"
+  },
+  {
+    "name": "Swarm of Crawling Claws",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#SwarmofCrawlingClaws"
+  },
+  {
+    "name": "Swarm of Lemures",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-l#SwarmofLemures"
+  },
+  {
+    "name": "Vampire Familiar",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-v#VampireFamiliar"
+  },
+  {
+    "name": "Warrior Veteran",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-w#WarriorVeteran"
+  },
+  {
+    "name": "Water Weird",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-w#WaterWeird"
+  },
+  {
+    "name": "Werewolf",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-w#Werewolf"
+  },
+  {
+    "name": "Wight",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-w#Wight"
+  },
+  {
+    "name": "Winter Wolf",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-w#WinterWolf"
+  },
+  {
+    "name": "Yeti",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-y#Yeti"
+  },
+  {
+    "name": "Yuan-ti Malison",
+    "cr": "CR 3",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-y#YuantiMalisons"
+  },
+  {
+    "name": "Aarakocra Aeromancer",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-a#AarakocraAeromancer"
+  },
+  {
+    "name": "Archelon",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Archelon"
+  },
+  {
+    "name": "Banshee",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#Banshee"
+  },
+  {
+    "name": "Black Pudding",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#BlackPudding"
+  },
+  {
+    "name": "Bone Naga",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#BoneNaga"
+  },
+  {
+    "name": "Bullywug Bog Sage",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#BullywugBogSage"
+  },
+  {
+    "name": "Chuul",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#Chuul"
+  },
+  {
+    "name": "Couatl",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#Couatl"
+  },
+  {
+    "name": "Elephant",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Elephant"
+  },
+  {
+    "name": "Ettin",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-e#Ettin"
+  },
+  {
+    "name": "Flameskull",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-f#Flameskull"
+  },
+  {
+    "name": "Ghost",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Ghost"
+  },
+  {
+    "name": "Gnoll Fang of Yeenoghu",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GnollFangofYeenoghu"
+  },
+  {
+    "name": "Guard Captain",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GuardCaptain"
+  },
+  {
+    "name": "Helmed Horror",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#HelmedHorror"
+  },
+  {
+    "name": "Hippopotamus",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Hippopotamus"
+  },
+  {
+    "name": "Incubus",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-i#Incubus"
+  },
+  {
+    "name": "Juvenile Shadow Dragon",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#JuvenileShadowDragon"
+  },
+  {
+    "name": "Lamia",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-l#Lamia"
+  },
+  {
+    "name": "Lizardfolk Sovereign",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-l#LizardfolkSovereign"
+  },
+  {
+    "name": "Red Dragon Wyrmling",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-r#RedDragonWyrmling"
+  },
+  {
+    "name": "Shadow Demon",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#ShadowDemon"
+  },
+  {
+    "name": "Succubus",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#Succubus"
+  },
+  {
+    "name": "Swarm of Dretches",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#SwarmofDretches"
+  },
+  {
+    "name": "Tough Boss",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-t#ToughBoss"
+  },
+  {
+    "name": "Wereboar",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-w#Wereboar"
+  },
+  {
+    "name": "Weretiger",
+    "cr": "CR 4",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-w#Weretiger"
+  },
+  {
+    "name": "Air Elemental",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-a#AirElemental"
+  },
+  {
+    "name": "Barbed Devil",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#BarbedDevil"
+  },
+  {
+    "name": "Barlgura",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#Barlgura"
+  },
+  {
+    "name": "Beholder Zombie",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-z#BeholderZombie"
+  },
+  {
+    "name": "Bulette",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#Bulette"
+  },
+  {
+    "name": "Cambion",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#Cambion"
+  },
+  {
+    "name": "Earth Elemental",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-e#EarthElemental"
+  },
+  {
+    "name": "Fire Elemental",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-f#FireElemental"
+  },
+  {
+    "name": "Flesh Golem",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-f#FleshGolem"
+  },
+  {
+    "name": "Giant Axe Beak",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-a#GiantAxeBeak"
+  },
+  {
+    "name": "Giant Crocodile",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantCrocodile"
+  },
+  {
+    "name": "Giant Shark",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantShark"
+  },
+  {
+    "name": "Gladiator",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Gladiator"
+  },
+  {
+    "name": "Gorgon",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Gorgon"
+  },
+  {
+    "name": "Half-Dragon",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#HalfDragon"
+  },
+  {
+    "name": "Hill Giant",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#HillGiant"
+  },
+  {
+    "name": "Mezzoloth",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#Mezzoloth"
+  },
+  {
+    "name": "Night Hag",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-n#NightHag"
+  },
+  {
+    "name": "Otyugh",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-o#Otyugh"
+  },
+  {
+    "name": "Pixie Wonderbringer",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#PixieWonderbringer"
+  },
+  {
+    "name": "Red Slaad",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#RedSlaad"
+  },
+  {
+    "name": "Revenant",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-r#Revenant"
+  },
+  {
+    "name": "Roper",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-r#Roper"
+  },
+  {
+    "name": "Sahuagin Baron",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#SahuaginBaron"
+  },
+  {
+    "name": "Salamander",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#Salamander"
+  },
+  {
+    "name": "Shambling Mound",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#ShamblingMound"
+  },
+  {
+    "name": "Triceratops",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Triceratops"
+  },
+  {
+    "name": "Troll",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-t#Troll"
+  },
+  {
+    "name": "Umber Hulk",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-u#UmberHulk"
+  },
+  {
+    "name": "Unicorn",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-u#Unicorn"
+  },
+  {
+    "name": "Vampire Spawn",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-v#VampireSpawn"
+  },
+  {
+    "name": "Water Elemental",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-w#WaterElemental"
+  },
+  {
+    "name": "Werebear",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-w#Werebear"
+  },
+  {
+    "name": "Wraith",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-w#Wraith"
+  },
+  {
+    "name": "Xorn",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-x#Xorn"
+  },
+  {
+    "name": "Young Remorhaz",
+    "cr": "CR 5",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-r#YoungRemorhaz"
+  },
+  {
+    "name": "Azer Pyromancer",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-a#AzerPyromancer"
+  },
+  {
+    "name": "Chasme",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#Chasme"
+  },
+  {
+    "name": "Chimera",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#Chimera"
+  },
+  {
+    "name": "Cyclops Sentry",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#CyclopsSentry"
+  },
+  {
+    "name": "Drider",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#Drider"
+  },
+  {
+    "name": "Galeb Duhr",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GalebDuhr"
+  },
+  {
+    "name": "Ghast Gravecaller",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GhastGravecaller"
+  },
+  {
+    "name": "Giant Squid",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantSquid"
+  },
+  {
+    "name": "Githzerai Zerth",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GithzeraiZerth"
+  },
+  {
+    "name": "Hobgoblin Warlord",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#HobgoblinWarlord"
+  },
+  {
+    "name": "Invisible Stalker",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-i#InvisibleStalker"
+  },
+  {
+    "name": "Kuo-toa Archpriest",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-k#KuotoaArchpriest"
+  },
+  {
+    "name": "Mage",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#Mage"
+  },
+  {
+    "name": "Mammoth",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#Mammoth"
+  },
+  {
+    "name": "Medusa",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#Medusa"
+  },
+  {
+    "name": "Merfolk Wavebender",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#MerfolkWavebender"
+  },
+  {
+    "name": "Performer Maestro",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#PerformerMaestro"
+  },
+  {
+    "name": "Pirate Captain",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#PirateCaptain"
+  },
+  {
+    "name": "Satyr Revelmaster",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#SatyrRevelmaster"
+  },
+  {
+    "name": "Vrock",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-v#Vrock"
+  },
+  {
+    "name": "Wyvern",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-w#Wyvern"
+  },
+  {
+    "name": "Young Brass Dragon",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#YoungBrassDragon"
+  },
+  {
+    "name": "Young White Dragon",
+    "cr": "CR 6",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-w#YoungWhiteDragon"
+  },
+  {
+    "name": "Bandit Deceiver",
+    "cr": "CR 7",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#BanditDeceiver"
+  },
+  {
+    "name": "Blue Slaad",
+    "cr": "CR 7",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#BlueSlaad"
+  },
+  {
+    "name": "Centaur Warden",
+    "cr": "CR 7",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#CentaurWarden"
+  },
+  {
+    "name": "Giant Ape",
+    "cr": "CR 7",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#GiantApe"
+  },
+  {
+    "name": "Graveyard Revenant",
+    "cr": "CR 7",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-r#GraveyardRevenant"
+  },
+  {
+    "name": "Grick Ancient",
+    "cr": "CR 7",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GrickAncient"
+  },
+  {
+    "name": "Mind Flayer",
+    "cr": "CR 7",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#MindFlayer"
+  },
+  {
+    "name": "Oni",
+    "cr": "CR 7",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-o#Oni"
+  },
+  {
+    "name": "Primeval Owlbear",
+    "cr": "CR 7",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-o#PrimevalOwlbear"
+  },
+  {
+    "name": "Shield Guardian",
+    "cr": "CR 7",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#ShieldGuardian"
+  },
+  {
+    "name": "Stone Giant",
+    "cr": "CR 7",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#StoneGiant"
+  },
+  {
+    "name": "Tree Blight",
+    "cr": "CR 7",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#TreeBlight"
+  },
+  {
+    "name": "Violet Fungus Necrohulk",
+    "cr": "CR 7",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-f#VioletFungusNecrohulk"
+  },
+  {
+    "name": "Young Black Dragon",
+    "cr": "CR 7",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#YoungBlackDragon"
+  },
+  {
+    "name": "Young Copper Dragon",
+    "cr": "CR 7",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#YoungCopperDragon"
+  },
+  {
+    "name": "Yuan-ti Abomination",
+    "cr": "CR 7",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-y#YuantiAbomination"
+  },
+  {
+    "name": "Aberrant Cultist",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#AberrantCultist"
+  },
+  {
+    "name": "Assassin",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-a#Assassin"
+  },
+  {
+    "name": "Berserker Commander",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#BerserkerCommander"
+  },
+  {
+    "name": "Chain Devil",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#ChainDevil"
+  },
+  {
+    "name": "Cloaker",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#Cloaker"
+  },
+  {
+    "name": "Cockatrice Regent",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#CockatriceRegent"
+  },
+  {
+    "name": "Death Cultist",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#DeathCultist"
+  },
+  {
+    "name": "Elemental Cultist",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#ElementalCultist"
+  },
+  {
+    "name": "Fiend Cultist",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#FiendCultist"
+  },
+  {
+    "name": "Fomorian",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-f#Fomorian"
+  },
+  {
+    "name": "Frost Giant",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-f#FrostGiant"
+  },
+  {
+    "name": "Githyanki Knight",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GithyankiKnight"
+  },
+  {
+    "name": "Gnoll Demoniac",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GnollDemoniac"
+  },
+  {
+    "name": "Green Slaad",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#GreenSlaad"
+  },
+  {
+    "name": "Hezrou",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#Hezrou"
+  },
+  {
+    "name": "Hydra",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#Hydra"
+  },
+  {
+    "name": "Sphinx of Secrets",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#SphinxofSecrets"
+  },
+  {
+    "name": "Spirit Naga",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#SpiritNaga"
+  },
+  {
+    "name": "Thri-kreen Psion",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-t#ThrikreenPsion"
+  },
+  {
+    "name": "Tyrannosaurus Rex",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/animals#TyrannosaurusRex"
+  },
+  {
+    "name": "Vampire Nightbringer",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-v#VampireNightbringer"
+  },
+  {
+    "name": "Young Bronze Dragon",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#YoungBronzeDragon"
+  },
+  {
+    "name": "Young Green Dragon",
+    "cr": "CR 8",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#YoungGreenDragon"
+  },
+  {
+    "name": "Abominable Yeti",
+    "cr": "CR 9",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-y#AbominableYeti"
+  },
+  {
+    "name": "Bone Devil",
+    "cr": "CR 9",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#BoneDevil"
+  },
+  {
+    "name": "Brazen Gorgon",
+    "cr": "CR 9",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#BrazenGorgon"
+  },
+  {
+    "name": "Clay Golem",
+    "cr": "CR 9",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#ClayGolem"
+  },
+  {
+    "name": "Cloud Giant",
+    "cr": "CR 9",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#CloudGiant"
+  },
+  {
+    "name": "Fire Giant",
+    "cr": "CR 9",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-f#FireGiant"
+  },
+  {
+    "name": "Glabrezu",
+    "cr": "CR 9",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Glabrezu"
+  },
+  {
+    "name": "Gray Slaad",
+    "cr": "CR 9",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#GraySlaad"
+  },
+  {
+    "name": "Nycaloth",
+    "cr": "CR 9",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-n#Nycaloth"
+  },
+  {
+    "name": "Treant",
+    "cr": "CR 9",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-t#Treant"
+  },
+  {
+    "name": "Young Blue Dragon",
+    "cr": "CR 9",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#YoungBlueDragon"
+  },
+  {
+    "name": "Young Silver Dragon",
+    "cr": "CR 9",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#YoungSilverDragon"
+  },
+  {
+    "name": "Aboleth",
+    "cr": "CR 10",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-a#Aboleth"
+  },
+  {
+    "name": "Cultist Hierophant",
+    "cr": "CR 10",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#CultistHierophant"
+  },
+  {
+    "name": "Cyclops Oracle",
+    "cr": "CR 10",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#CyclopsOracle"
+  },
+  {
+    "name": "Death Slaad",
+    "cr": "CR 10",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#DeathSlaad"
+  },
+  {
+    "name": "Deva",
+    "cr": "CR 10",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#Deva"
+  },
+  {
+    "name": "Dire Worg",
+    "cr": "CR 10",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-w#DireWorg"
+  },
+  {
+    "name": "Guardian Naga",
+    "cr": "CR 10",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GuardianNaga"
+  },
+  {
+    "name": "Haunting Revenant",
+    "cr": "CR 10",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-r#HauntingRevenant"
+  },
+  {
+    "name": "Noble Prodigy",
+    "cr": "CR 10",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-n#NobleProdigy"
+  },
+  {
+    "name": "Performer Legend",
+    "cr": "CR 10",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#PerformerLegend"
+  },
+  {
+    "name": "Spy Master",
+    "cr": "CR 10",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#SpyMaster"
+  },
+  {
+    "name": "Stone Golem",
+    "cr": "CR 10",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#StoneGolem"
+  },
+  {
+    "name": "Warrior Commander",
+    "cr": "CR 10",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-w#WarriorCommander"
+  },
+  {
+    "name": "Yochlol",
+    "cr": "CR 10",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-y#Yochlol"
+  },
+  {
+    "name": "Young Gold Dragon",
+    "cr": "CR 10",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#YoungGoldDragon"
+  },
+  {
+    "name": "Young Red Dragon",
+    "cr": "CR 10",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-r#YoungRedDragon"
+  },
+  {
+    "name": "Bandit Crime Lord",
+    "cr": "CR 11",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#BanditCrimeLord"
+  },
+  {
+    "name": "Behir",
+    "cr": "CR 11",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#Behir"
+  },
+  {
+    "name": "Dao",
+    "cr": "CR 11",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#Dao"
+  },
+  {
+    "name": "Death Knight Aspirant",
+    "cr": "CR 11",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#DeathKnightAspirant"
+  },
+  {
+    "name": "Djinni",
+    "cr": "CR 11",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#Djinni"
+  },
+  {
+    "name": "Efreeti",
+    "cr": "CR 11",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-e#Efreeti"
+  },
+  {
+    "name": "Horned Devil",
+    "cr": "CR 11",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-h#HornedDevil"
+  },
+  {
+    "name": "Marid",
+    "cr": "CR 11",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#Marid"
+  },
+  {
+    "name": "Mind Flayer Arcanist",
+    "cr": "CR 11",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#MindFlayerArcanist"
+  },
+  {
+    "name": "Remorhaz",
+    "cr": "CR 11",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-r#Remorhaz"
+  },
+  {
+    "name": "Roc",
+    "cr": "CR 11",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-r#Roc"
+  },
+  {
+    "name": "Sphinx of Lore",
+    "cr": "CR 11",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#SphinxofLore"
+  },
+  {
+    "name": "Arcanaloth",
+    "cr": "CR 12",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-a#Arcanaloth"
+  },
+  {
+    "name": "Archmage",
+    "cr": "CR 12",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#Archmage"
+  },
+  {
+    "name": "Archpriest",
+    "cr": "CR 12",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#Archpriest"
+  },
+  {
+    "name": "Erinyes",
+    "cr": "CR 12",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-e#Erinyes"
+  },
+  {
+    "name": "Githzerai Psion",
+    "cr": "CR 12",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GithzeraiPsion"
+  },
+  {
+    "name": "Pirate Admiral",
+    "cr": "CR 12",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#PirateAdmiral"
+  },
+  {
+    "name": "Questing Knight",
+    "cr": "CR 12",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-k#QuestingKnight"
+  },
+  {
+    "name": "Adult Brass Dragon",
+    "cr": "CR 13",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#AdultBrassDragon"
+  },
+  {
+    "name": "Adult White Dragon",
+    "cr": "CR 13",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-w#AdultWhiteDragon"
+  },
+  {
+    "name": "Beholder",
+    "cr": "CR 13",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#Beholder"
+  },
+  {
+    "name": "Nalfeshnee",
+    "cr": "CR 13",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-n#Nalfeshnee"
+  },
+  {
+    "name": "Rakshasa",
+    "cr": "CR 13",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-r#Rakshasa"
+  },
+  {
+    "name": "Shadow Dragon",
+    "cr": "CR 13",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#ShadowDragon"
+  },
+  {
+    "name": "Storm Giant",
+    "cr": "CR 13",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#StormGiant"
+  },
+  {
+    "name": "Ultroloth",
+    "cr": "CR 13",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-u#Ultroloth"
+  },
+  {
+    "name": "Vampire",
+    "cr": "CR 13",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-v#Vampire"
+  },
+  {
+    "name": "Adult Black Dragon",
+    "cr": "CR 14",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#AdultBlackDragon"
+  },
+  {
+    "name": "Adult Copper Dragon",
+    "cr": "CR 14",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#AdultCopperDragon"
+  },
+  {
+    "name": "Death Tyrant",
+    "cr": "CR 14",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#DeathTyrant"
+  },
+  {
+    "name": "Ice Devil",
+    "cr": "CR 14",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-i#IceDevil"
+  },
+  {
+    "name": "Adult Bronze Dragon",
+    "cr": "CR 15",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#AdultBronzeDragon"
+  },
+  {
+    "name": "Adult Green Dragon",
+    "cr": "CR 15",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#AdultGreenDragon"
+  },
+  {
+    "name": "Mummy Lord",
+    "cr": "CR 15",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#MummyLord"
+  },
+  {
+    "name": "Purple Worm",
+    "cr": "CR 15",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#PurpleWorm"
+  },
+  {
+    "name": "Salamander Inferno Master",
+    "cr": "CR 15",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#SalamanderInfernoMaster"
+  },
+  {
+    "name": "Vampire Umbral Lord",
+    "cr": "CR 15",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-v#VampireUmbralLord"
+  },
+  {
+    "name": "Adult Blue Dragon",
+    "cr": "CR 16",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#AdultBlueDragon"
+  },
+  {
+    "name": "Adult Silver Dragon",
+    "cr": "CR 16",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#AdultSilverDragon"
+  },
+  {
+    "name": "Githyanki Dracomancer",
+    "cr": "CR 16",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#GithyankiDracomancer"
+  },
+  {
+    "name": "Gulthias Blight",
+    "cr": "CR 16",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#GulthiasBlight"
+  },
+  {
+    "name": "Iron Golem",
+    "cr": "CR 16",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-i#IronGolem"
+  },
+  {
+    "name": "Marilith",
+    "cr": "CR 16",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-m#Marilith"
+  },
+  {
+    "name": "Planetar",
+    "cr": "CR 16",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#Planetar"
+  },
+  {
+    "name": "Adult Gold Dragon",
+    "cr": "CR 17",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#AdultGoldDragon"
+  },
+  {
+    "name": "Adult Red Dragon",
+    "cr": "CR 17",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-r#AdultRedDragon"
+  },
+  {
+    "name": "Death Knight",
+    "cr": "CR 17",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#DeathKnight"
+  },
+  {
+    "name": "Dracolich",
+    "cr": "CR 17",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#Dracolich"
+  },
+  {
+    "name": "Dragon Turtle",
+    "cr": "CR 17",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#DragonTurtle"
+  },
+  {
+    "name": "Goristro",
+    "cr": "CR 17",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#Goristro"
+  },
+  {
+    "name": "Sphinx of Valor",
+    "cr": "CR 17",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#SphinxofValor"
+  },
+  {
+    "name": "Demilich",
+    "cr": "CR 18",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-d#Demilich"
+  },
+  {
+    "name": "Balor",
+    "cr": "CR 19",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#Balor"
+  },
+  {
+    "name": "Ancient Brass Dragon",
+    "cr": "CR 20",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#AncientBrassDragon"
+  },
+  {
+    "name": "Ancient White Dragon",
+    "cr": "CR 20",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-w#AncientWhiteDragon"
+  },
+  {
+    "name": "Animal Lord",
+    "cr": "CR 20",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-a#AnimalLord"
+  },
+  {
+    "name": "Pit Fiend",
+    "cr": "CR 20",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-p#PitFiend"
+  },
+  {
+    "name": "Ancient Black Dragon",
+    "cr": "CR 21",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#AncientBlackDragon"
+  },
+  {
+    "name": "Ancient Copper Dragon",
+    "cr": "CR 21",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#AncientCopperDragon"
+  },
+  {
+    "name": "Arch-hag",
+    "cr": "CR 21",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-a#Archhag"
+  },
+  {
+    "name": "Lich",
+    "cr": "CR 21",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-l#Lich"
+  },
+  {
+    "name": "Solar",
+    "cr": "CR 21",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#Solar"
+  },
+  {
+    "name": "Ancient Bronze Dragon",
+    "cr": "CR 22",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#AncientBronzeDragon"
+  },
+  {
+    "name": "Ancient Green Dragon",
+    "cr": "CR 22",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#AncientGreenDragon"
+  },
+  {
+    "name": "Elemental Cataclysm",
+    "cr": "CR 22",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-e#ElementalCataclysm"
+  },
+  {
+    "name": "Ancient Blue Dragon",
+    "cr": "CR 23",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#AncientBlueDragon"
+  },
+  {
+    "name": "Ancient Silver Dragon",
+    "cr": "CR 23",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-s#AncientSilverDragon"
+  },
+  {
+    "name": "Blob of Annihilation",
+    "cr": "CR 23",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-b#BlobofAnnihilation"
+  },
+  {
+    "name": "Empyrean",
+    "cr": "CR 23",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-e#Empyrean"
+  },
+  {
+    "name": "Kraken",
+    "cr": "CR 23",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-k#Kraken"
+  },
+  {
+    "name": "Ancient Gold Dragon",
+    "cr": "CR 24",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-g#AncientGoldDragon"
+  },
+  {
+    "name": "Ancient Red Dragon",
+    "cr": "CR 24",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-r#AncientRedDragon"
+  },
+  {
+    "name": "Colossus",
+    "cr": "CR 25",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-c#Colossus"
+  },
+  {
+    "name": "Tarrasque",
+    "cr": "CR 30",
+    "url": "https://www.dndbeyond.com/sources/dnd/mm-2024/monsters-t#Tarrasque"
+  }
+]

@@ -1,6 +1,8 @@
 "use client";
 
-import { DefaultValues } from "react-hook-form";
+import { useEffect } from "react";
+import { DefaultValues, Resolver, useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
 
 import { AvatarField } from "@/components/profile/AvatarField";
 import { CustomComponentProps, FieldConfig, GenericForm } from "@/components/ui/GenericForm";
@@ -11,6 +13,17 @@ import { ProfileFormData, profileSchema } from "@/schemas/profileSchema";
 export function ProfileForm() {
     const { user } = useAuth();
     const { loading, saving, message, defaultValues, onSubmit } = useProfile();
+
+    const form = useForm<ProfileFormData>({
+        resolver: yupResolver(profileSchema) as unknown as Resolver<ProfileFormData>,
+        defaultValues,
+    });
+
+    useEffect(() => {
+        if (defaultValues && !form.formState.isDirty && !form.formState.isSubmitted) {
+            form.reset(defaultValues as DefaultValues<ProfileFormData>);
+        }
+    }, [defaultValues, form]);
 
     if (loading) {
         return (
@@ -47,6 +60,13 @@ export function ProfileForm() {
             label: "Birth Date",
         },
         {
+            name: "dndBeyondProfileUrl",
+            type: "text",
+            label: "D&D Beyond Character Sheet URL",
+            colSpan: 2,
+            placeholder: "https://www.dndbeyond.com/characters/123456",
+        },
+        {
             name: "hasPlayedBefore",
             type: "checkbox",
             label: "I have played Dungeons & Dragons before",
@@ -71,11 +91,11 @@ export function ProfileForm() {
 
                 {defaultValues && (
                     <GenericForm<ProfileFormData>
+                        form={form}
                         schema={profileSchema}
                         onSubmit={onSubmit}
                         fields={fields}
                         submitText="Save Changes"
-                        defaultValues={defaultValues as DefaultValues<ProfileFormData>}
                         loading={saving}
                     />
                 )}

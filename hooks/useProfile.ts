@@ -35,6 +35,7 @@ export function useProfile() {
                 displayName: data.displayName,
                 hasPlayedBefore: data.hasPlayedBefore,
                 birthDate: profileClient.formatDateForInput(data.birthDate),
+                dndBeyondProfileUrl: data.dndBeyondProfileUrl,
                 avatar: undefined,
             });
         } catch (error) {
@@ -65,6 +66,7 @@ export function useProfile() {
                         ? data.birthDate.toISOString()
                         : new Date(data.birthDate).toISOString(),
                 hasPlayedBefore: data.hasPlayedBefore,
+                dndBeyondProfileUrl: data.dndBeyondProfileUrl,
             });
 
             setMessage({ type: "success", text: "Profile updated successfully!" });

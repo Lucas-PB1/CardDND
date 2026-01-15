@@ -166,10 +166,10 @@ export default function SocialDashboard() {
                                                 text: "Are you sure you want to remove this friend? This action cannot be undone.",
                                                 icon: "warning",
                                                 showCancelButton: true,
-                                                confirmButtonColor: "#EF4444", // red-500
-                                                cancelButtonColor: "#3B82F6", // blue-500
+                                                confirmButtonColor: "#EF4444",
+                                                cancelButtonColor: "#3B82F6",
                                                 confirmButtonText: "Yes, remove",
-                                                background: "#111827", // gray-900
+                                                background: "#111827",
                                                 color: "#fff",
                                             }).then((result) => {
                                                 if (result.isConfirmed) {

@@ -23,9 +23,14 @@ export class ProfileClientService extends BaseApiService {
         });
     }
 
-    formatDateForInput(date: Date | string | undefined): string | undefined {
+    formatDateForInput(date: Date | string | { toDate: () => Date } | undefined): string | undefined {
         if (!date) return undefined;
-        const d = new Date(date);
+        let d: Date;
+        if (typeof date === "object" && "toDate" in date && typeof date.toDate === "function") {
+            d = date.toDate();
+        } else {
+            d = new Date(date as string | Date);
+        }
         return d.toISOString().split("T")[0];
     }
 }

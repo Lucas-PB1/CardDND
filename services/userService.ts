@@ -9,6 +9,7 @@ export interface UserProfile {
     photoURL?: string;
     birthDate?: FirebaseFirestore.Timestamp | Date | string;
     hasPlayedBefore: boolean;
+    dndBeyondProfileUrl?: string;
     role: "user" | "admin";
     createdAt: FirebaseFirestore.Timestamp | Date | string;
     updatedAt: FirebaseFirestore.Timestamp | Date | string;
