@@ -1,0 +1,40 @@
+{
+    "id": "char-id-123",
+    "userId": "user-uuid-789",
+    "name": "Loyd Frontera",
+    "level": 12,
+    "class": "Illrigger",
+    "subclass": "Architect of Despair",
+    "race": "Human",
+    "gold": 500,
+    "experience": 15000,
+    "dndBeyondUrl": "https://www.dndbeyond.com/characters/123",
+    "imageUrl": "https://storage.googleapis.com/.../avatar.png",
+    "stats": {
+        "strength": 11,
+        "dexterity": 15,
+        "constitution": 20,
+        "intelligence": 9,
+        "wisdom": 12,
+        "charisma": 20
+    },
+    "savingThrows": {
+        "strength": 1,
+        "dexterity": 3,
+        "constitution": 10,
+        "intelligence": 0,
+        "wisdom": 2,
+        "charisma": 10
+    },
+    "hp": {
+        "current": 136,
+        "max": 136,
+        "temp": 0
+    },
+    "armorClass": 20,
+    "initiative": 2,
+    "speed": 40,
+    "proficiencyBonus": 4,
+    "createdAt": "Timestamp(1715616000, 0)",
+    "updatedAt": "Timestamp(1715616000, 0)"
+}

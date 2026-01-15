@@ -67,6 +67,21 @@ function FormFieldItem<T extends FieldValues>({
     error?: string;
 }) {
     if (field.component) {
+        const isStatic = field.name.toString().startsWith("header_");
+
+        if (isStatic) {
+            return <>{field.component({
+                value: undefined,
+                onChange: () => { },
+                onBlur: () => { },
+                error: undefined,
+                register,
+                name: field.name,
+                label: field.label,
+                placeholder: field.placeholder,
+            })}</>;
+        }
+
         return (
             <Controller
                 control={control}
