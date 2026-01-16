@@ -53,3 +53,34 @@ export interface Deck extends yup.InferType<typeof deckSchema> {
     createdAt: string;
     updatedAt: string;
 }
+
+export enum DuelPhase {
+    Draw = "Draw",
+    Main = "Main",
+    End = "End",
+}
+
+export interface DuelPlayer {
+    userId: string;
+    characterId: string;
+    name: string; // Character name
+    avatarUrl?: string; // Character avatar
+    hp: number;
+    maxHp: number;
+    deck: Card[];
+    hand: Card[];
+    field: Card[];
+    graveyard: Card[];
+}
+
+export interface DuelMatch {
+    id: string;
+    players: DuelPlayer[]; // Array of 2 players
+    currentTurnUserId: string;
+    phase: DuelPhase;
+    turnCount: number;
+    log: string[]; // Simple action log
+    winnerId?: string;
+    createdAt: string;
+    updatedAt: string;
+}
