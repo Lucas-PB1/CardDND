@@ -34,6 +34,7 @@ export function Header() {
                         src="/logo.jpg"
                         alt="CardND"
                         fill
+                        sizes="80px"
                         className="object-cover"
                     />
                 </div>
@@ -91,6 +92,13 @@ export function Header() {
                                             onClick={() => setIsDropdownOpen(false)}
                                         >
                                             Social
+                                        </Link>
+                                        <Link
+                                            href="/duel"
+                                            className="block w-full rounded-lg px-3 py-2 text-left text-sm text-dnd-fg transition-colors hover:bg-muted/50"
+                                            onClick={() => setIsDropdownOpen(false)}
+                                        >
+                                            Duel / Decks
                                         </Link>
                                         <button
                                             onClick={() => {

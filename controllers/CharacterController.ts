@@ -14,6 +14,24 @@ export class CharacterController extends BaseController {
         }
     }
 
+    async getCharacter(request: Request, params: { id: string }) {
+        try {
+            const decodedToken = await this.getAuthenticatedUser(request);
+            const { uid } = decodedToken;
+            const { id } = params;
+
+            const character = await characterService.getCharacter(uid, id);
+
+            if (!character) {
+                return this.jsonResponse({ error: "Character not found" }, 404);
+            }
+
+            return this.jsonResponse(character);
+        } catch (error) {
+            return this.errorResponse(error as Error);
+        }
+    }
+
     async createCharacter(request: Request) {
         try {
             const decodedToken = await this.getAuthenticatedUser(request);

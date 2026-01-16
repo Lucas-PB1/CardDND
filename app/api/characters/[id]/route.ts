@@ -1,5 +1,10 @@
 import { characterController } from "@/controllers/CharacterController";
 
+export async function GET(request: Request, context: { params: Promise<{ id: string }> }) {
+    const { id } = await context.params;
+    return characterController.getCharacter(request, { id });
+}
+
 export async function PUT(request: Request, context: { params: Promise<{ id: string }> }) {
     const { id } = await context.params;
     return characterController.updateCharacter(request, { id });

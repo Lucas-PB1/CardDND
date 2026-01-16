@@ -9,6 +9,10 @@ export class CharacterClientService extends BaseApiService {
         return this.get<Character[]>(API_URL);
     }
 
+    async getCharacter(characterId: string) {
+        return this.get<Character>(`${API_URL}/${characterId}`);
+    }
+
     async createCharacter(data: Partial<Character>) {
         return this.post<Character, typeof data>(API_URL, data);
     }

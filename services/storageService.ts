@@ -35,6 +35,21 @@ export class StorageService {
             throw error;
         }
     }
+
+    /**
+     * Uploads a card image to Firebase Storage.
+     */
+    async uploadCardImage(userId: string, characterId: string, deckId: string, file: File): Promise<string> {
+        try {
+            const compressedFile = await compressImage(file);
+            const storageRef = ref(storage, `cards/${userId}/${characterId}/${deckId}/${Date.now()}_${compressedFile.name}`);
+            await uploadBytes(storageRef, compressedFile);
+            return await getDownloadURL(storageRef);
+        } catch (error) {
+            console.error("Error uploading card image:", error);
+            throw error;
+        }
+    }
 }
 
 export const storageService = new StorageService();

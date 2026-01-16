@@ -12,6 +12,7 @@ export function Footer() {
                                 src="/logo.jpg"
                                 alt="CardND Logo"
                                 fill
+                                sizes="96px"
                                 className="object-contain"
                             />
                         </Link>
